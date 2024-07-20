@@ -1,0 +1,142 @@
+{
+  "reaction_zones": {
+    "reaction_zone:1": {
+      "pump_port": 1,
+      "valve_port": 1
+    },
+    "reaction_zone:2": {
+      "pump_port": 1,
+      "valve_port": 2
+    },
+    "reaction_zone:3": {
+      "pump_port": 1,
+      "valve_port": 3
+    },
+    "reaction_zone:4": {
+      "pump_port": 1,
+      "valve_port": 4
+    },
+    "reaction_zone:5": {
+      "pump_port": 1,
+      "valve_port": 5
+    },
+    "reaction_zone:6": {
+      "pump_port": 1,
+      "valve_port": 6
+    },
+    "reaction_zone:7": {
+      "pump_port": 1,
+      "valve_port": 7
+    },
+    "reaction_zone:8": {
+      "pump_port": 1,
+      "valve_port": 8
+    },
+    "reaction_zone:9": {
+      "pump_port": 2,
+      "valve_port": 1
+    },
+    "reaction_zone:10": {
+      "pump_port": 2,
+      "valve_port": 2
+    },
+    "reaction_zone:11": {
+      "pump_port": 2,
+      "valve_port": 3
+    },
+    "reaction_zone:12": {
+      "pump_port": 2,
+      "valve_port": 4
+    },
+    "reaction_zone:13": {
+      "pump_port": 2,
+      "valve_port": 5
+    },
+    "reaction_zone:14": {
+      "pump_port": 2,
+      "valve_port": 6
+    },
+    "reaction_zone:15": {
+      "pump_port": 2,
+      "valve_port": 7
+    },
+    "reaction_zone:16": {
+      "pump_port": 2,
+      "valve_port": 8
+    }
+  },
+  "sample_zones": {
+    "sample_zone:1": {
+      "pump_port": 3,
+      "valve_port": 1
+    },
+    "sample_zone:2": {
+      "pump_port": 3,
+      "valve_port": 2
+    },
+    "sample_zone:3": {
+      "pump_port": 3,
+      "valve_port": 3
+    },
+    "sample_zone:4": {
+      "pump_port": 3,
+      "valve_port": 4
+    },
+    "sample_zone:5": {
+      "pump_port": 3,
+      "valve_port": 5
+    },
+    "sample_zone:6": {
+      "pump_port": 3,
+      "valve_port": 6
+    },
+    "sample_zone:7": {
+      "pump_port": 3,
+      "valve_port": 7
+    },
+    "sample_zone:8": {
+      "pump_port": 3,
+      "valve_port": 8
+    },
+    "sample_zone:9": {
+      "pump_port": 4,
+      "valve_port": 1
+    },
+    "sample_zone:10": {
+      "pump_port": 4,
+      "valve_port": 2
+    },
+    "sample_zone:11": {
+      "pump_port": 4,
+      "valve_port": 3
+    },
+    "sample_zone:12": {
+      "pump_port": 4,
+      "valve_port": 4
+    },
+    "sample_zone:13": {
+      "pump_port": 4,
+      "valve_port": 5
+    },
+    "sample_zone:14": {
+      "pump_port": 4,
+      "valve_port": 6
+    },
+    "sample_zone:15": {
+      "pump_port": 4,
+      "valve_port": 7
+    },
+    "sample_zone:16": {
+      "pump_port": 4,
+      "valve_port": 8
+    }
+  },
+  "source_zones": {
+    "source_zone:1": {
+      "pump_port": 7
+    },
+    "source_zone:2": {
+      "pump_port": 6
+    }
+  }
+}

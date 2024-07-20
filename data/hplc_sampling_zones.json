@@ -1,0 +1,7 @@
+{
+  "reaction": {"pump_port": 11},
+  "acn": {"pump_port": 10},
+  "hplc": {"pump_port": 9},
+  "N2": {"pump_port": 7},
+  "waste": {"pump_port": 12}
+}

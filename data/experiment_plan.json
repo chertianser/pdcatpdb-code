@@ -1,0 +1,379 @@
+{
+  "1": {
+    "task": "schlenk_cycle",
+    "parameters": {
+      "specification": "gas",
+      "zones": [
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_0"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_1"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_2"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_3"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_4"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_5"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_6"
+        },
+        {
+          "pump_port": "reaction_group_0",
+          "valve_port": "reaction_7"
+        }
+      ],
+      "num_cycles": 5,
+      "delay": 1
+    }
+  },
+  "2": {
+    "task": "schlenk_cycle",
+    "parameters": {
+      "specification": "gas",
+      "zones": [
+        {
+          "pump_port": "Bpin"
+        }
+      ],
+      "num_cycles": 5,
+      "delay": 1
+    }
+  },
+  "3": {
+    "task": "rinse_syringe",
+    "parameters": {
+      "specification": "liquid",
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "quantity": 1,
+      "iteration": 3,
+      "delay": 1.0
+    }
+  },
+  "4": {
+    "task": "make_solution",
+    "parameters": {
+      "specification": "liquid",
+      "zone": {
+        "pump_port": "Bpin"
+      },
+      "quantity": 10.799999999999999,
+      "mix_iterations": 10,
+      "delay": 2.0,
+      "speed": 0.3
+    }
+  },
+  "5": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_0"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "6": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_0"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "7": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_1"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "8": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_1"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "9": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_2"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "10": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_2"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "11": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_3"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "12": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_3"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "13": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_4"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "14": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_4"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "15": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_5"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "16": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_5"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "17": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_6"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "18": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_6"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "19": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_7"
+      },
+      "quantity": 1.2,
+      "source_zone": {
+        "pump_port": "Bpin"
+      },
+      "purge_N2": 0,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "20": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "reaction_group_0",
+        "valve_port": "reaction_7"
+      },
+      "quantity": 1.3,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": false
+    }
+  },
+  "21": {
+    "task": "heat_and_stir",
+    "parameters": {
+      "specification": "none",
+      "reaction_time": 6,
+      "temp": 60,
+      "rpm": 800
+    }
+  },
+  "22": {
+    "task": "add_solution",
+    "parameters": {
+      "specification": "liquid",
+      "target_zone": {
+        "pump_port": "Bpin"
+      },
+      "quantity": 1,
+      "source_zone": {
+        "pump_port": "Dioxane"
+      },
+      "purge_N2": 2,
+      "delay": 2.0,
+      "rinse": true
+    }
+  }
+}

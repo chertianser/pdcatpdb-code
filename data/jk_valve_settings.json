@@ -1,0 +1,9 @@
+{
+  "encoding":   "utf-8",
+  "baudrate":   9600,
+  "timeout":    1,
+  "parity":     "none",
+  "bytesize":   8,
+  "stopbits":   1,
+  "num_port":   8
+}

@@ -1,0 +1,10 @@
+{
+  "encoding": "utf-8",
+  "baudrate": 9600,
+  "timeout": 1,
+  "parity": "even",
+  "bytesize": 7,
+  "stopbits": 1,
+  "max_temp": 200,
+  "max_rpm":  1700
+}
