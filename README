@@ -1,0 +1,23 @@
+To run MEDUSA for PDB:
+
+1. Get drivers for SerialDevice, Pump, Hotplate and Valve, clone "develop" branch
+	https://gitlab.com/aspuru-guzik-group/self-driving-lab/devices/serial-device.git
+	https://gitlab.com/aspuru-guzik-group/self-driving-lab/devices/hotplates.git
+	https://gitlab.com/aspuru-guzik-group/self-driving-lab/devices/pumps.git
+	https://gitlab.com/aspuru-guzik-group/self-driving-lab/devices/valves.git
+
+2. As of dependency, pip install all
+
+3. For HTE, $NUM_REACTIONS = reactions in parallel
+	Load all samples to MEDUSA, connect all tubings.
+
+	cd ./src/pdb_medusa/
+	python pdb_screening.py $NUM_REACTIONS
+
+4. For monitoring, $NUM_REACTIONS = points to monitor + 1 
+	Load reaction sample to MEDUSA, connect all tubings.
+
+	cd ./src/pdb_medusa/
+	python pdb_monitoring.py $NUM_REACTIONS
+	
+	start HPLC sequence, input the HPLC data file as prompt suggests
