@@ -1,0 +1,12 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,reference_gibbs
+0,0,[LPd(OH)$_2$]$_2$,TRUE,TRUE,FALSE,top,-1.5,black,black,o,0
+0,1,Pd-RXT,FALSE,TRUE,TRUE,top,-1.5,black,black,x,3.46
+0,2,RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o,0
+1,2,RXT,FALSE,FALSE,FALSE,top,-1.5,#C04A1B,#C04A1B,o,0
+1,4,RXT-C2,TRUE,TRUE,TRUE,bottom,1.5,#C04A1B,#C04A1B,o,15
+1,6,C2,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o,-25
+2,2,RXT,FALSE,FALSE,FALSE,top,-1.5,#204195,#204196,o,0
+2,5,RXT-T4,TRUE,TRUE,TRUE,top,-5.5,#204195,#204196,o,15
+2,7,T4,TRUE,TRUE,FALSE,top,-1.5,#204195,#204196,o,0
+2,9,T4-PDT,FALSE,TRUE,TRUE,top,-1.5,#204195,#204196,x,3.46
+2,11,PDT,TRUE,TRUE,FALSE,top,-1.5,black,black,o,-25
