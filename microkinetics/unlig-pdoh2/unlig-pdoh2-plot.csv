@@ -1,0 +1,18 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,filename,qh-G(T)_SPC,im,group,structure,equalized_gibbs,reference_gibbs
+0,0,$\mu$-RXT,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-00-murxt,-1680.932156,           C1,unlig-pdoh2,00-murxt,-1477.984848,0.0
+0,2,Pd-RXT,False,True,True,bottom,1.5,black,black,x,,,,,diffusion,,10.254133987818271
+0,4,RXT,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-01-rxt,-1401.605637,           C1,unlig-pdoh2,01-rxt,-1477.974031,6.787770913057276
+0,6,RXT-INT1,True,True,True,bottom,1.5,black,black,o,unlig-pdoh2-02-ts-rxt-int1,-1401.579236,-153.12,unlig-pdoh2,02-ts-rxt-int1,-1477.9476300000001,23.35465081258117
+0,8,INT1,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-03-int1,-1401.611808,           C1,unlig-pdoh2,03-int1,-1477.9802020000002,2.9154094167419395
+0,10,INT1-INT2,True,True,True,bottom,1.5,black,black,o,unlig-pdoh2-04-ts-int1-int2,-1401.599392,-125.63,unlig-pdoh2,04-ts-int1-int2,-1477.9677860000002,10.706568116569674
+0,12,INT2,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-05-int2,-1401.642355,           C1,unlig-pdoh2,05-int2,-1478.010749,-16.25312511948793
+0,14,INT2 // H$_2$O,False,True,True,top,-1.5,black,black,x,,,,,diffusion,,-8.63578630380244
+0,16,INT2 + H$_2$O,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-06-int2-h2o,-1478.004134,           C1,unlig-pdoh2,06-int2-h2o,-1478.004134,-12.102149378563436
+0,18,INT2-INT3,True,True,True,bottom,1.5,black,black,o,unlig-pdoh2-07-ts-int2-int3,-1477.982175,-119.15,unlig-pdoh2,07-ts-int2-int3,-1477.982175,1.677333054467484
+0,20,INT3 + B(OH)$_3$,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-08-int3-boh3,-1478.011232,           C1,unlig-pdoh2,08-int3-boh3,-1478.011232,-16.556212237098265
+0,22,INT3 // B(OH)$_3$,False,True,True,top,-1.5,black,black,x,,,,,diffusion,,-13.024588167952817
+0,24,INT3,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-09-int3,-1225.738721,           C1,unlig-pdoh2,09-int3,-1478.0111279999999,-16.490951242713813
+0,26,INT3-INT4,True,True,True,bottom,1.5,black,black,o,unlig-pdoh2-10-ts-int3-int4,-1225.697614,-721.08,unlig-pdoh2,10-ts-int3-int4,-1477.9700209999999,9.304084249644834
+0,28,INT4,True,True,False,top,-1.5,black,black,o,unlig-pdoh2-11-int4,-1225.741106,           C1,unlig-pdoh2,11-int4,-1478.0135129999999,-17.98756154386346
+0,30,INT4-PDT,False,True,True,top,-1.5,black,black,x,,,,,diffusion,,-14.521198469102465
+0,32,PDT,True,True,False,top,-1.5,black,black,o,,,,,pdt,,-24.967977891977675
