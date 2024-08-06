@@ -1,0 +1,23 @@
+{
+  "encoding":	"utf-8",
+  "baudrate":	38400,
+  "RS485":      true,
+  "timeout":    1,
+  "bytesize":   8,
+  "parity":     "none",
+  "stopbits":   1,
+  "num_ports":  8,
+  "syringe_volume":   1e-2,
+  "top_speed_ml": 0.5,
+  "init_valve":   5,
+  "out_valve":  1,
+  "home_pos":   -12000,
+  "home_pos_port": -6800,
+  "plunger_length": 200000,
+  "top_speed":  384,
+  "start_speed":  256,
+  "stop_speed":   256,
+  "speed_slope":   256,
+  "wait_time":  3600,
+  "step_resolution": 4
+}

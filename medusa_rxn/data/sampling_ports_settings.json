@@ -1,0 +1,10 @@
+{
+  "pump_ports": {
+    "reaction": 11,
+    "hplc": 9,
+    "ACN": 10,
+    "N2": 7,
+    "waste": 12
+  }
+}
+

@@ -1,0 +1,107 @@
+{
+
+    "reaction_zone_1": {
+      "content": {
+        "chemical": "reaction_1",
+        "inert_atmosphere": false
+      },
+      "location": {
+        "pump_port": 1,
+        "valve_port": 1
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 8,
+        "current_volume": 0,
+        "addable": true,
+        "drawable": true
+      }
+    },
+    "reaction_zone_2": {
+      "content": {
+        "chemical": "reaction_2",
+        "inert_atmosphere": false
+      },
+      "location": {
+        "pump_port": 1,
+        "valve_port": 2
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 8,
+        "current_volume": 0,
+        "addable": true,
+        "drawable": true
+      }
+    },
+
+    "sample_zone_1": {
+      "content": {
+        "chemical": "sample_1",
+        "inert_atmosphere": false
+      },
+      "location": {
+        "pump_port": 3,
+        "valve_port": 1
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 1.8,
+        "current_volume": 0,
+        "addable": true,
+        "drawable": false
+      }
+    },
+    "sample_zone_2": {
+      "content": {
+        "chemical": "sample_2",
+        "inert_atmosphere": false
+      },
+      "location": {
+        "pump_port": 3,
+        "valve_port": 2
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 1.8,
+        "current_volume": 0,
+        "addable": true,
+        "drawable": false
+      }
+    },
+
+    "source_zone_1": {
+      "content": {
+        "chemical": "dioxane",
+        "inert_atmosphere": true
+      },
+      "location": {
+        "pump_port": 7,
+        "valve_port": 0
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 500,
+        "current_volume": 100,
+        "addable": false,
+        "drawable": true
+      }
+    },
+    "source_zone_2": {
+      "content": {
+        "chemical": "Bpin",
+        "inert_atmosphere": false
+      },
+      "location": {
+        "pump_port": 6,
+        "valve_port": 0
+      },
+      "size": {
+        "min_volume": 0,
+        "max_volume": 35,
+        "current_volume": 0,
+        "addable": true,
+        "drawable": true
+      }
+    }
+}
