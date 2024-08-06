@@ -1,0 +1,18 @@
+﻿line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
+0,0,$\mu$-RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,2,Pd-RXT,FALSE,TRUE,TRUE,bottom,1.5,black,black,x
+0,4,RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,6,RXT-INT1,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,8,INT1,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,10,INT1-INT2,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,12,INT2,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,14,INT2 // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,16,INT2 + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,18,INT2-INT3,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,20,INT3 + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,22,INT3 // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,24,INT3,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,26,INT3-INT4,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,28,INT4,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,30,INT4-PDT,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,32,PDT,TRUE,TRUE,FALSE,top,-1.5,black,black,o

@@ -1,0 +1,14 @@
+﻿line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
+0,0,[NaphB(OH)$_3$]$^-$,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+0,1,TS0,TRUE,TRUE,TRUE,top,-1.5,darkred,darkred,o
+0,2,Naph-H + [OB(OH)$_2$]$^-$,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+0,3,Naph-H + [OB(OH)$_2$]$^-$ // Naph-H + [B(OH)$_4$]$^-$,FALSE,TRUE,TRUE,top,-1.5,darkred,darkred,x
+0,4,Naph-H + [B(OH)$_4$]$^-$,FALSE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,0,[NaphB(OH)$_3$]$^-$,FALSE,FALSE,FALSE,top,-1.5,darkblue,darkblue,o
+1,1,[NaphB(OH)$_3$]$^-$ // [NaphB(OH)$_3$]$^-$ + H$_2$O,FALSE,TRUE,TRUE,top,-1.5,darkblue,darkblue,x
+1,2,[NaphB(OH)$_3$]$^-$ + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+1,3,TS1,TRUE,TRUE,TRUE,top,-1.5,darkblue,darkblue,o
+1,4,Naph-H + [B(OH)$_4$]$^-$,FALSE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,4,Naph-H + [B(OH)$_4$]$^-$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+2,5,Naph-H + [B(OH)$_4$]$^-$ // Naph-H + B(OH)$_3$ + [NaphB(OH)$_3$]$^-$,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+2,6,Naph-H + B(OH)$_3$ + [NaphB(OH)$_3$]$^-$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
