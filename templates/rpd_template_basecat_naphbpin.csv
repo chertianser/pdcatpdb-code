@@ -1,0 +1,14 @@
+﻿line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
+0,0,[NaphBpin(OH)]$^-$,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+0,1,TS0,TRUE,TRUE,TRUE,top,-1.5,darkred,darkred,o
+0,2,Naph-H + [OBpin]$^-$,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+0,3,Naph-H + [OBpin]$^-$ // Naph-H + [Bpin(OH)$_2$]$^-$,FALSE,TRUE,TRUE,top,-1.5,darkred,darkred,x
+0,4,Naph-H + [Bpin(OH)$_2$]$^-$,FALSE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,0,[NaphBpin(OH)]$^-$,FALSE,FALSE,FALSE,top,-1.5,darkblue,darkblue,o
+1,1,[NaphBpin(OH)]$^-$ // [NaphBpin(OH)]$^-$ + H$_2$O,FALSE,TRUE,TRUE,top,-1.5,darkblue,darkblue,x
+1,2,[NaphBpin(OH)]$^-$ + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+1,3,TS1,TRUE,TRUE,TRUE,top,-1.5,darkblue,darkblue,o
+1,4,Naph-H + [Bpin(OH)$_2$]$^-$,FALSE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,4,Naph-H + [Bpin(OH)$_2$]$^-$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+2,5,Naph-H + [Bpin(OH)$_2$]$^-$ // Naph-H + Bpin(OH) + [NaphBpin(OH)]$^-$,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+2,6,Naph-H + Bpin(OH) + [NaphBpin(OH)]$^-$,TRUE,TRUE,FALSE,top,-1.5,black,black,o

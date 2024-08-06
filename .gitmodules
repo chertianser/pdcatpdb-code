@@ -1,0 +1,3 @@
+[submodule "pykinetic"]
+	path = pykinetic
+	url = https://github.com/rperezsoto/pykinetic.git

@@ -1,0 +1,42 @@
+#### compounds ####
+0)    00-lpdoh2    -1905.241864 hartree
+1)    01-rxt    -2466.388026 hartree
+2)    03-c1    -2466.376952 hartree
+3)    05-c2    -2466.429754 hartree
+4)    09-c3    -2290.512684 hartree
+5)    11-c4    -2290.487048 hartree
+6)    13-t1    -2466.389866 hartree
+7)    15-t2    -2466.402541 hartree
+8)    19-t3    -2290.498756 hartree
+9)    21-t4    -2290.502222 hartree
+10)    99-l2pd2oh4    -3810.483728 hartree
+11)    naphboh2    -561.150376 hartree
+12)    h2o    -76.368394 hartree
+13)    boh3    -252.272407 hartree
+14)    naphh-c    -385.286152 hartree
+15)    naphh-t    -385.286152 hartree
+#### reactions ####
+0)    99-l2pd2oh4    =>    00-lpdoh2  +  00-lpdoh2    !0.00552431408141274 hartree
+1)    00-lpdoh2  +  00-lpdoh2    =>    99-l2pd2oh4    !0.00552431408141274 hartree
+2)    00-lpdoh2  +  naphboh2    =>    01-rxt    !0.009738314081459976 hartree
+3)    01-rxt    =>    00-lpdoh2  +  naphboh2    !0.00552431408141274 hartree
+4)    01-rxt    =>    03-c1    !0.020952000000306725 hartree
+5)    03-c1    =>    01-rxt    !0.009878000000298925 hartree
+6)    03-c1    =>    05-c2    !0.006961999999930413 hartree
+7)    05-c2    =>    03-c1    !0.05976399999963178 hartree
+8)    05-c2  +  h2o    =>    09-c3  +  boh3    !0.014685999999983324 hartree
+9)    09-c3  +  boh3    =>    05-c2  +  h2o    !0.0016289999998662097 hartree
+10)    09-c3    =>    11-c4    !0.046134999999594584 hartree
+11)    11-c4    =>    09-c3    !0.020498999999745138 hartree
+12)    11-c4    =>    naphh-c  +  00-lpdoh2    !0.00552431408141274 hartree
+13)    naphh-c  +  00-lpdoh2    =>    11-c4    !0.04649231408166088 hartree
+14)    01-rxt    =>    13-t1    !0.014854000000013912 hartree
+15)    13-t1    =>    01-rxt    !0.01669399999991583 hartree
+16)    13-t1    =>    15-t2    !0.018629000000146334 hartree
+17)    15-t2    =>    13-t1    !0.03130400000009104 hartree
+18)    15-t2  +  h2o    =>    19-t3  +  boh3    !0.03472800000008647 hartree
+19)    19-t3  +  boh3    =>    15-t2  +  h2o    !0.03495599999996557 hartree
+20)    19-t3    =>    21-t4    !0.032150999999885244 hartree
+21)    21-t4    =>    19-t3    !0.03561700000000201 hartree
+22)    21-t4    =>    naphh-t  +  00-lpdoh2    !0.00552431408141274 hartree
+23)    naphh-t  +  00-lpdoh2    =>    21-t4    !0.031318314081545395 hartree

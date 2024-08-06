@@ -1,0 +1,47 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,structure,reference_gibbs
+0,0,[LPd(OH)$_2$]$_2$,True,True,False,top,-1.5,black,black,o,00-lpdoh2,0.0
+0,1,Pd-RXT,False,True,True,top,-1.5,black,black,x,diffusion,7.190318559921709
+0,2,RXT,True,True,False,top,-1.5,black,black,o,01-rxt,3.723955485160715
+1,2,RXT,False,False,False,top,-1.5,#C04A1B,#C04A1B,o,01-rxt,3.723955485160715
+1,4,RXT-C1,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,02-ts-rxt-c1,19.48385809055481
+1,6,C1,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,03-c1,4.776289017790852
+1,8,C1-C2,True,True,True,top,-5.5,#C04A1B,#C04A1B,o,04-ts-c1-c2,9.601837536185036
+1,10,C2,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,05-c2,-28.781667244042477
+1,12,C2 // H$_2$O,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-22.11563292168856
+1,14,C2 + H$_2$O,True,True,False,bottom,3.5,#C04A1B,#C04A1B,o,06-c2-h2o,-25.581995996449557
+1,16,C2-C3,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,07-ts-c2-c3,-20.096307420933897
+1,18,C3 + B(OH)$_3$,True,True,False,bottom,3.5,#C04A1B,#C04A1B,o,08-c3-boh3,-25.23498320973406
+1,20,C3 // B(OH)$_3$,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-15.416968366529613
+1,22,C3,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,09-c3,-18.883331441290608
+1,24,C3-C4,True,True,True,top,-7.5,#C04A1B,#C04A1B,o,10-ts-c3-c4,10.79912577664818
+1,26,C4,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,11-c4,-3.543860241472863
+1,28,C4-PDT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-0.07749716671186846
+1,30,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+2,2,RXT,False,False,False,top,-1.5,#204195,#204195,o,01-rxt,3.723955485160715
+2,4,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,13.42588079584264
+2,6,T1,True,True,False,top,-1.5,#204195,#204195,o,13-t1,2.253073076272216
+2,8,T1-T2,True,True,True,bottom,1.5,#204195,#204195,o,14-ts-t1-t2,14.200227593350926
+2,10,T2,True,True,False,top,-1.5,#204195,#204195,o,15-t2,-3.978096856911372
+2,12,T2 // H$_2$O,False,True,True,top,-1.5,#204195,#204195,x,diffusion,3.317329554547105
+2,14,T2 + H$_2$O,True,True,False,top,-1.5,#204195,#204195,o,16-t2-h2o,-0.14903352021388963
+2,16,T2-T3,True,True,True,bottom,1.5,#204195,#204195,o,17-ts-t2-t3,13.920985839254463
+2,18,T3 + B(OH)$_3$,True,True,False,top,-1.5,#204195,#204195,o,18-t3-boh3,-4.25922113975511
+2,20,T3 // B(OH)$_3$,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-0.42011738616014993
+2,22,T3,True,True,False,top,-1.5,#204195,#204195,o,19-t3,-3.8864804609211445
+2,24,T3-T4,True,True,True,bottom,1.5,#204195,#204195,o,20-ts-t3-t4,14.585518463072434
+2,26,T4,True,True,False,top,-1.5,#204195,#204195,o,21-t4,-10.466545709567503
+2,28,T4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-7.000182634806508
+2,30,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+3,10,T2,False,False,False,top,-1.5,lightseagreen,lightseagreen,o,15-t2,-3.978096856911372
+3,11,T2 // L,False,True,True,top,-1.5,lightseagreen,lightseagreen,x,diffusion,5.218056012177616
+3,12,T2 + L,True,True,False,top,-1.5,lightseagreen,lightseagreen,o,39-t2-lig,1.7516929374166212
+3,13,T2-P1,True,True,True,bottom,1.5,lightseagreen,lightseagreen,o,40-ts-t2-p1,11.451108209863966
+3,14,P1 + B(OH)$_3$,True,True,False,top,-1.5,lightseagreen,lightseagreen,o,41-p1-boh3,-32.18778913692903
+3,15,P1 // B(OH)$_3$,False,True,True,top,-1.5,lightseagreen,lightseagreen,x,diffusion,-26.719670565096276
+3,16,P1,True,True,False,top,-1.5,lightseagreen,lightseagreen,o,42-p1,-30.18603363985727
+3,17,P1 // H$_2$O,False,True,True,top,-1.5,lightseagreen,lightseagreen,x,diffusion,-26.719670565096276
+3,18,P1 + H$_2$O,True,True,False,top,-1.5,lightseagreen,lightseagreen,o,45-p1-h2o,-30.47343301843014
+3,19,T3-P1,True,True,True,bottom,1.5,lightseagreen,lightseagreen,o,44-ts-t3-p1,10.355476518044012
+3,20,T3 + L,True,True,False,top,-6.5,lightseagreen,lightseagreen,o,43-t3-lig,2.3936352176940847
+3,21,T3 // L,False,True,True,top,-1.5,lightseagreen,lightseagreen,x,diffusion,5.85999829245508
+3,22,T3,False,False,False,top,-1.5,lightseagreen,lightseagreen,o,19-t3,-3.8864804609211445

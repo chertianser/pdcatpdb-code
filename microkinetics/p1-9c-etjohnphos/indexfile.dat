@@ -1,0 +1,54 @@
+#### compounds ####
+0)    00-lpdoh2    -1240.604742 hartree
+1)    01-rxt    -1801.749425 hartree
+2)    03-c1    -1801.755197 hartree
+3)    05-c2    -1801.798763 hartree
+4)    09-c3    -1625.887343 hartree
+5)    11-c4    -1625.866141 hartree
+6)    13-t1    -1801.753305 hartree
+7)    15-t2    -1801.760649 hartree
+8)    19-t3    -1625.85638 hartree
+9)    21-t4    -1625.86269 hartree
+10)    42-p1    -2510.790047 hartree
+11)    99-l2pd2oh4    -2481.209484 hartree
+12)    naphboh2    -561.150376 hartree
+13)    h2o    -76.368394 hartree
+14)    boh3    -252.272407 hartree
+15)    naphh-c    -385.286152 hartree
+16)    naphh-t    -385.286152 hartree
+17)    pre-catalyst-dimer    -558.713776 hartree
+18)    pre-catalyst-monomer    -279.356888 hartree
+19)    ligand    -961.247854 hartree
+#### reactions ####
+0)    99-l2pd2oh4    =>    00-lpdoh2  +  00-lpdoh2    !0.00552431408141274 hartree
+1)    00-lpdoh2  +  00-lpdoh2    =>    99-l2pd2oh4    !0.00552431408141274 hartree
+2)    00-lpdoh2  +  naphboh2    =>    01-rxt    !0.011217314081477525 hartree
+3)    01-rxt    =>    00-lpdoh2  +  naphboh2    !0.00552431408141274 hartree
+4)    01-rxt    =>    03-c1    !0.023095000000012078 hartree
+5)    03-c1    =>    01-rxt    !0.028866999999991094 hartree
+6)    03-c1    =>    05-c2    !0.016178999999965527 hartree
+7)    05-c2    =>    03-c1    !0.05974500000002081 hartree
+8)    05-c2  +  h2o    =>    09-c3  +  boh3    !0.018183000000135507 hartree
+9)    09-c3  +  boh3    =>    05-c2  +  h2o    !0.010776000000078056 hartree
+10)    09-c3    =>    11-c4    !0.05359500000008666 hartree
+11)    11-c4    =>    09-c3    !0.03239299999995637 hartree
+12)    11-c4    =>    naphh-c  +  00-lpdoh2    !0.00552431408141274 hartree
+13)    naphh-c  +  00-lpdoh2    =>    11-c4    !0.03027731408155887 hartree
+14)    01-rxt    =>    13-t1    !0.016213999999990847 hartree
+15)    13-t1    =>    01-rxt    !0.020093999999971857 hartree
+16)    13-t1    =>    15-t2    !0.02306799999996656 hartree
+17)    15-t2    =>    13-t1    !0.030412000000069384 hartree
+18)    15-t2  +  h2o    =>    19-t3  +  boh3    !0.027764000000161104 hartree
+19)    19-t3  +  boh3    =>    15-t2  +  h2o    !0.027507999999897947 hartree
+20)    19-t3    =>    21-t4    !0.03058099999998376 hartree
+21)    21-t4    =>    19-t3    !0.0368909999999687 hartree
+22)    21-t4    =>    naphh-t  +  00-lpdoh2    !0.00552431408141274 hartree
+23)    naphh-t  +  00-lpdoh2    =>    21-t4    !0.03372831408159982 hartree
+24)    pre-catalyst-dimer    =>    pre-catalyst-monomer  +  pre-catalyst-monomer    !0.005524314081299053 hartree
+25)    pre-catalyst-monomer  +  pre-catalyst-monomer    =>    pre-catalyst-dimer    !0.005524314081299053 hartree
+26)    pre-catalyst-monomer  +  ligand    =>    00-lpdoh2    !0.00552431408141274 hartree
+27)    00-lpdoh2    =>    pre-catalyst-monomer  +  ligand    !0.00552431408141274 hartree
+28)    15-t2  +  ligand    =>    42-p1  +  boh3    !0.02196800000001531 hartree
+29)    42-p1  +  boh3    =>    15-t2  +  ligand    !0.07591899999988527 hartree
+30)    19-t3  +  ligand    =>    42-p1  +  h2o    !0.01672599999983504 hartree
+31)    42-p1  +  h2o    =>    19-t3  +  ligand    !0.07093299999996816 hartree

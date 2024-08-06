@@ -1,0 +1,44 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
+0,0,[LPd(OH)$_2$]$_2$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,1,Pd-RXT,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,2,RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+1,2,RXT,FALSE,FALSE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,3,RXT-C1,TRUE,TRUE,TRUE,bottom,1.5,#C04A1B,#C04A1B,o
+1,4,C1,TRUE,TRUE,FALSE,bottom,1.5,#C04A1B,#C04A1B,o
+1,5,C1-C2,TRUE,TRUE,TRUE,bottom,1.5,#C04A1B,#C04A1B,o
+1,6,C2,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,8,C2 // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,#C04A1B,#C04A1B,x
+1,10,C2 + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,12,C2-C3,TRUE,TRUE,TRUE,bottom,1.5,#C04A1B,#C04A1B,o
+1,14,C3 + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,16,C3 // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,#C04A1B,#C04A1B,x
+1,18,C3,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,19,C3-C4,TRUE,TRUE,TRUE,bottom,1.5,#C04A1B,#C04A1B,o
+1,20,C4,TRUE,TRUE,FALSE,top,-1.5,#C04A1B,#C04A1B,o
+1,21,C4-PDT,FALSE,TRUE,TRUE,top,-1.5,#C04A1B,#C04A1B,x
+1,22,PDT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+2,2,RXT,FALSE,FALSE,FALSE,top,-1.5,#204195,#204195,o
+2,3,RXT-T1,TRUE,TRUE,TRUE,top,-5.5,#204195,#204195,o
+2,4,T1,TRUE,TRUE,FALSE,top,-1.5,#204195,#204195,o
+2,5,T1-T2,TRUE,TRUE,TRUE,top,-5.5,#204195,#204195,o
+2,6,T2,TRUE,TRUE,FALSE,top,-1.5,#204195,#204195,o
+2,8,T2 // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,#204195,#204195,x
+2,10,T2 + H$_2$O,TRUE,TRUE,FALSE,bottom,1.5,#204195,#204195,o
+2,12,T2-T3,TRUE,TRUE,TRUE,bottom,1.5,#204195,#204195,o
+2,14,T3 + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,#204195,#204195,o
+2,16,T3 // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,#204195,#204195,x
+2,18,T3,TRUE,TRUE,FALSE,bottom,3.5,#204195,#204195,o
+2,19,T3-T4,TRUE,TRUE,TRUE,top,-7.5,#204195,#204195,o
+2,20,T4,TRUE,TRUE,FALSE,top,-2.5,#204195,#204195,o
+2,21,T4-PDT,FALSE,TRUE,TRUE,top,-1.5,#204195,#204195,x
+2,22,PDT,FALSE,TRUE,FALSE,top,-1.5,black,black,o
+3,6,T2,FALSE,FALSE,FALSE,top,-1.5,darkgreen,darkgreen,o
+3,9,T2-XA,TRUE,TRUE,TRUE,bottom,1.5,darkgreen,darkgreen,o
+3,12,XA,TRUE,TRUE,FALSE,top,-1.5,darkgreen,darkgreen,o
+3,15,XA-T3,TRUE,TRUE,TRUE,bottom,2.5,darkgreen,darkgreen,o
+3,18,T3,FALSE,FALSE,FALSE,bottom,3.5,darkgreen,darkgreen,o
+4,6,T2,FALSE,FALSE,FALSE,top,-1.5,purple,purple,o
+4,9,T2-XB,TRUE,TRUE,TRUE,top,-1.5,purple,purple,o
+4,12,XB,TRUE,TRUE,FALSE,top,-1.5,purple,purple,o
+4,15,XB-T3,TRUE,TRUE,TRUE,top,-1.5,purple,purple,o
+4,18,T3,FALSE,FALSE,FALSE,bottom,3.5,purple,purple,o
