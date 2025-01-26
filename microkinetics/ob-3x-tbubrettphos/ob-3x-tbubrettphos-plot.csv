@@ -1,0 +1,69 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,structure,reference_gibbs
+0,0.0,[LPd(OH)$_2$]$_2$,True,True,False,top,-1.5,black,black,o,00-lpdoh2,0.0
+0,1.0,Pd-RXT,False,True,True,top,-1.5,black,black,x,diffusion,4.836216445064324
+0,2.0,RXT,True,True,False,top,-1.5,black,black,o,01-rxt,1.3698533703033298
+1,2.0,RXT,False,False,False,top,-1.5,#C04A1B,#C04A1B,o,01-rxt,1.3698533703033298
+1,3.0,RXT-C1,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,02-ts-rxt-c1,21.073026051640287
+1,4.0,C1,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,03-c1,13.721124044005581
+1,5.0,C1-C2,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,04-ts-c1-c2,19.263915990000005
+1,6.0,C2,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,05-c2,-21.951539435455626
+2,2.0,RXT,False,False,False,top,-1.5,#204195,#204195,o,01-rxt,1.3698533703033298
+2,3.0,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,14.895194430870196
+2,4.0,T1,True,True,False,top,-1.5,#204195,#204195,o,13-t1,1.0033877869131371
+2,5.0,T1-T2,True,True,True,top,-5.5,#204195,#204195,o,14-ts-t1-t2,10.662642447892551
+2,6.0,T2,True,True,False,top,-1.5,#204195,#204195,o,15-t2,-7.749115559041812
+2,7.0,T2 // H$_2$O,False,True,True,top,-1.5,#204195,#204195,x,diffusion,7.4479112348513015
+2,8.0,T2 + H$_2$O,True,True,False,top,-1.5,#204195,#204195,o,16-t2-h2o,3.981548160090307
+2,11.33333333,T2-T3,True,True,True,bottom,1.5,#204195,#204195,o,17-ts-t2-t3,23.03901350394061
+2,14.66666667,T3 + B(OH)$_3$,True,True,False,bottom,2.5,#204195,#204195,o,18-t3-boh3,5.49447370947937
+2,18.0,T3 // B(OH)$_3$,False,True,True,top,-1.5,#204195,#204195,x,diffusion,8.960836784240364
+2,21.33333333,T3,True,True,False,bottom,2.5,#204195,#204195,o,19-t3,-10.568516013382386
+2,24.66666667,T3-T4,True,True,True,bottom,1.5,#204195,#204195,o,20-ts-t3-t4,10.560358389191338
+2,28.0,T4,True,True,False,top,-1.5,#204195,#204195,o,21-t4,-7.7459780113199255
+2,30.0,T4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-4.27961493655893
+2,32.0,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+3,8.0,T2 + H$_2$O,False,True,False,top,-1.5,#b65a85,#b65a85,o,16-t2-h2o,3.981548160090307
+3,9.0,T2 + H$_2$O // T2 + 2H$_2$O,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,7.4479112348513015
+3,10.0,T2 + 2H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,300-t2-2h2o,-2.590986973566952
+3,11.0,T2-T3OB,True,True,True,bottom,0.5,#b65a85,#b65a85,o,301-ts-t2-t3ob,18.171421845616578
+3,12.0,T3OB + 2H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,302-t3ob-2h2o,-0.36583807304681226
+3,13.0,T3OB + 2H$_2$O // T3OB + H$_2$O,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,3.1005250017141823
+3,14.0,T3OB + H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,303-t3ob-h2o,-13.463217614189658
+3,15.0,T3OB + H$_2$O // T3OB,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-9.85001730284838
+3,16.0,T3OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,304-t3ob,-13.316380377609375
+3,17.0,T3OB-T4OB,True,True,True,bottom,1.5,#b65a85,#b65a85,o,305-ts-t3ob-t4ob,9.40009321218888
+3,18.0,T4OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,306-t4ob,-15.30935074043206
+3,19.0,T4OB-T5OB,True,True,True,bottom,1.5,#b65a85,#b65a85,o,314-ts-t4ob-t5ob,-2.7095862806502597
+3,20.0,T5OB + R-H,True,True,False,top,-1.5,#b65a85,#b65a85,o,315-t5ob-rh,-11.759529158401758
+3,21.0,T5OB + R-H // T5OB,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-8.293166083640763
+3,22.0,T5OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,316-t5ob,-13.047178775880518
+3,23.0,T5OB // T5OB + H$_2$O,False,True,True,bottom,1.5,#b65a85,#b65a85,x,diffusion,-9.580815701119523
+3,24.0,T5OB + H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,317-t5ob-1h2o,-18.425563217367234
+3,25.0,T5OB + H$_2$O // T5OB + 2H$_2$O,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-8.645198947396135
+3,26.0,T5OB + 2H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,320-t5ob-2h2o,-12.11156202215713
+3,27.0,T5OB-T6OB-6MPS,True,True,True,bottom,1.5,#b65a85,#b65a85,o,321-ts-t5ob-t6ob-6mps,6.273213073684152
+3,28.0,T6OB + H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,322-t6ob-1h2o,-16.489696223311164
+3,29.0,T6OB + H$_2$O // T6OB,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-13.023333148550169
+3,30.0,T6OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,319-t6ob,-19.094488407881705
+3,31.0,T6OB // PDT,False,True,True,top,-1.5,black,black,x,diffusion,-15.62812533312071
+3,32.0,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+5,6.0,T2,False,True,False,top,-1.5,#8000ff,#8000ff,o,15-t2,-7.749115559041812
+5,12.0,T2-T4OB,True,True,True,top,-2.5,#8000ff,#8000ff,o,307-ts-t2-t4ob,12.867083532763383
+5,18.0,T4OB,False,True,False,top,-1.5,#8000ff,#8000ff,o,306-t4ob,-15.30935074043206
+6,18.0,T4OB,False,True,False,top,-1.5,#2F6800,#2F6800,o,306-t4ob,-15.30935074043206
+6,19.0,T4OB // T4OB + H$_2$O,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-8.802703846687404
+6,20.0,T4OB + H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,308-t4ob-h2o,-12.269066921448399
+6,21.0,T4OB + H$_2$O // T4OB + 2H$_2$O,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-1.263803990148412
+6,22.0,T4OB + 2H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,311-t4ob-2h2o,-4.7301670649094065
+6,23.0,T4OB-T4-6MPS,True,True,True,bottom,1.5,#2F6800,#2F6800,o,312-ts-t4ob-t4-6mps,14.086334607850446
+6,24.0,T4 + B(OH)$_3$ + H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,313-t4-boh3h2o,-6.448288240332126
+6,25.0,T4 + B(OH)$_3$ + H$_2$O // T4 + B(OH)$_3$,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-2.981925165571132
+6,26.0,T4 + B(OH)$_3$,True,True,False,top,-1.5,#2F6800,#2F6800,o,310-t4-boh3,-12.993212954265074
+6,27.0,T4 + B(OH)$_3$ // T4,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-4.27961493655893
+6,28.0,T4,False,True,False,top,-1.5,#2F6800,#2F6800,o,21-t4,-7.7459780113199255
+98,24.0,T5OB + H$_2$O,False,True,False,top,-1.5,#8000ff,#8000ff,o,317-t5ob-1h2o,-18.425563217367234
+98,27.0,T5OB-T6OB-4MPS,True,True,True,bottom,1.5,#8000ff,#8000ff,o,318-ts-t5ob-t6ob-4mps,8.183352175051038
+98,30.0,T6OB,False,True,False,top,-1.5,#8000ff,#8000ff,o,319-t6ob,-19.094488407881705
+99,20.0,T4OB + H$_2$O,True,True,False,top,-1.5,#8000ff,#8000ff,o,308-t4ob-h2o,-12.269066921448399
+99,23.0,T4OB-T4-4MPS,True,True,True,bottom,1.5,#8000ff,#8000ff,o,309-ts-t4ob-t4-4mps,15.357041467745166
+99,26.0,T4 + B(OH)$_3$,True,True,False,top,-1.5,#8000ff,#8000ff,o,310-t4-boh3,-12.993212954265074

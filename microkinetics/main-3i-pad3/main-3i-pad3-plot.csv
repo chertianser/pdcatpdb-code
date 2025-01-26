@@ -1,0 +1,34 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,structure,reference_gibbs
+0,0,[LPd(OH)$_2$]$_2$,True,True,False,top,-1.5,black,black,o,00-lpdoh2,0.0
+0,1,Pd-RXT,False,True,True,top,-1.5,black,black,x,diffusion,4.7926045307028176
+0,2,RXT,True,True,False,top,-1.5,black,black,o,01-rxt,1.326241455941823
+1,2,RXT,False,False,False,top,-1.5,#C04A1B,#C04A1B,o,01-rxt,1.326241455941823
+1,4,RXT-C1,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,02-ts-rxt-c1,10.462153142871006
+1,6,C1,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,03-c1,8.02239597315155
+1,8,C1-C2,True,True,True,top,-5.5,#C04A1B,#C04A1B,o,04-ts-c1-c2,15.405673458575833
+1,10,C2,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,05-c2,-26.38646325277281
+1,11,C2 // H$_2$O,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-19.380946258121778
+1,12,C2 + H$_2$O,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,06-c2-h2o,-22.847309332882773
+1,13,C2-C3,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,07-ts-c2-c3,-17.363503285543676
+1,14,C3 + B(OH)$_3$,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,08-c3-boh3,-18.759084547965475
+1,15,C3 // B(OH)$_3$,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-15.29272147320448
+1,16,C3,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,09-c3,-19.845931106107074
+1,18,C3-C4,True,True,True,top,-7.5,#C04A1B,#C04A1B,o,10-ts-c3-c4,15.829869921646738
+1,20,C4,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,11-c4,-5.42952646969589
+1,21,C4-PDT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-1.9631633949348957
+1,22,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+2,2,RXT,False,False,False,top,-1.5,#204195,#204195,o,01-rxt,1.326241455941823
+2,4,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,11.407810050674149
+2,6,T1,True,True,False,top,-1.5,#204195,#204195,o,13-t1,2.574357971439959
+2,8,T1-T2,True,True,True,bottom,1.5,#204195,#204195,o,14-ts-t1-t2,13.611623625772317
+2,10,T2,True,True,False,top,-1.5,#204195,#204195,o,15-t2,-3.422123386667669
+2,11,T2 // H$_2$O,False,True,True,top,-1.5,#204195,#204195,x,diffusion,3.958016815564599
+2,12,T2 + H$_2$O,True,True,False,top,-1.5,#204195,#204195,o,16-t2-h2o,0.4916537408036047
+2,13,T2-T3,True,True,True,bottom,1.5,#204195,#204195,o,17-ts-t2-t3,10.000933616910133
+2,14,T3 + B(OH)$_3$,True,True,False,top,-1.5,#204195,#204195,o,18-t3-boh3,1.1078681286772407
+2,15,T3 // B(OH)$_3$,False,True,True,top,-1.5,#204195,#204195,x,diffusion,4.574231203438235
+2,16,T3,True,True,False,top,-1.5,#204195,#204195,o,19-t3,-2.269388324083594
+2,18,T3-T4,True,True,True,bottom,1.5,#204195,#204195,o,20-ts-t3-t4,13.973069132693348
+2,20,T4,True,True,False,top,-1.5,#204195,#204195,o,21-t4,-7.2637369142526955
+2,21,T4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-3.797373839491701
+2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
