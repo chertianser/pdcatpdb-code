@@ -1,0 +1,110 @@
+#### compounds ####
+0)    00-lpdoh2    -1907.545159 hartree
+1)    01-rxt    -2468.692154 hartree
+2)    03-c1    -2468.674972 hartree
+3)    05-c2    -2468.72743 hartree
+4)    09-c3    -2292.80661 hartree
+5)    11-c4    -2292.778183 hartree
+6)    13-t1    -2468.689347 hartree
+7)    15-t2    -2468.708874 hartree
+8)    16-t2-h2o    -2545.06831 hartree
+9)    18-t3-boh3    -2545.053976 hartree
+10)    19-t3    -2292.806136 hartree
+11)    21-t4    -2292.807141 hartree
+12)    59-t2-2h2o    -2621.431825 hartree
+13)    61-t3ob-2h2o    -2621.436139 hartree
+14)    62-t3ob-h2o    -2545.065386 hartree
+15)    63-t3ob    -2468.71359 hartree
+16)    65-t4ob    -2468.714418 hartree
+17)    67-t4ob-h2o    -2545.086709 hartree
+18)    69-t4-boh3    -2545.080002 hartree
+19)    70-t4ob-2h2o    -2621.43495 hartree
+20)    72-t4-boh3h2o    -2621.438546 hartree
+21)    74-t5ob-rh    -2468.710581 hartree
+22)    75-t5ob    -2083.431141 hartree
+23)    76-t5ob-1h2o    -2159.806778 hartree
+24)    78-t6ob    -2159.806057 hartree
+25)    79-t5ob-2h2o    -2236.165547 hartree
+26)    81-t6ob-1h2o    -2236.172271 hartree
+27)    84-t3-boh3h2o    -2621.443549 hartree
+28)    100-l2pd2oh4    -3815.090318 hartree
+29)    naphboh2    -561.150376 hartree
+30)    h2o    -76.368394 hartree
+31)    boh3    -252.272407 hartree
+32)    naph-c    -385.286152 hartree
+33)    naph-t    -385.286152 hartree
+#### reactions ####
+0)    100-l2pd2oh4    =>    00-lpdoh2  +  00-lpdoh2    !0.005952089005404559 hartree
+1)    00-lpdoh2  +  00-lpdoh2    =>    100-l2pd2oh4    !0.005952089005404559 hartree
+2)    00-lpdoh2  +  naphboh2    =>    01-rxt    !0.009333089005394868 hartree
+3)    01-rxt    =>    00-lpdoh2  +  naphboh2    !0.005952089005404559 hartree
+4)    01-rxt    =>    03-c1    !0.027216999999836844 hartree
+5)    03-c1    =>    01-rxt    !0.010034999999788852 hartree
+6)    03-c1    =>    05-c2    !0.01084599999967395 hartree
+7)    05-c2    =>    03-c1    !0.06330399999978908 hartree
+8)    05-c2  +  h2o    =>    09-c3  +  boh3    !0.020970000000033906 hartree
+9)    09-c3  +  boh3    =>    05-c2  +  h2o    !0.004163000000062311 hartree
+10)    09-c3    =>    11-c4    !0.047070999999959895 hartree
+11)    11-c4    =>    09-c3    !0.018643999999767402 hartree
+12)    11-c4    =>    naph-c  +  00-lpdoh2    !0.005952089005404559 hartree
+13)    naph-c  +  00-lpdoh2    =>    11-c4    !0.05908008900541972 hartree
+14)    01-rxt    =>    13-t1    !0.020927000000028784 hartree
+15)    13-t1    =>    01-rxt    !0.01812000000018088 hartree
+16)    13-t1    =>    15-t2    !0.01570899999978792 hartree
+17)    15-t2    =>    13-t1    !0.035235999999713385 hartree
+18)    15-t2  +  h2o    =>    19-t3  +  boh3    !0.049113000000033935 hartree
+19)    19-t3  +  boh3    =>    15-t2  +  h2o    !0.05038800000011179 hartree
+20)    19-t3    =>    21-t4    !0.03260000000000218 hartree
+21)    21-t4    =>    19-t3    !0.03360499999962485 hartree
+22)    21-t4    =>    naph-t  +  00-lpdoh2    !0.005952089005404559 hartree
+23)    naph-t  +  00-lpdoh2    =>    21-t4    !0.030122089005544694 hartree
+24)    59-t2-2h2o    =>    61-t3ob-2h2o    !0.02743800000007468 hartree
+25)    61-t3ob-2h2o    =>    59-t2-2h2o    !0.03175199999986944 hartree
+26)    63-t3ob    =>    65-t4ob    !0.032502000000022235 hartree
+27)    65-t4ob    =>    63-t3ob    !0.03333000000020547 hartree
+28)    15-t2    =>    65-t4ob    !0.035566000000017084 hartree
+29)    65-t4ob    =>    15-t2    !0.041110000000117 hartree
+30)    67-t4ob-h2o    =>    69-t4-boh3    !0.05179200000020501 hartree
+31)    69-t4-boh3    =>    67-t4ob-h2o    !0.045085000000199216 hartree
+32)    70-t4ob-2h2o    =>    72-t4-boh3h2o    !0.03812999999991007 hartree
+33)    72-t4-boh3h2o    =>    70-t4ob-2h2o    !0.04172599999992599 hartree
+34)    65-t4ob    =>    74-t5ob-rh    !0.016070000000127038 hartree
+35)    74-t5ob-rh    =>    65-t4ob    !0.012232999999923777 hartree
+36)    76-t5ob-1h2o    =>    78-t6ob    !0.049420000000282016 hartree
+37)    78-t6ob    =>    76-t5ob-1h2o    !0.048698999999942316 hartree
+38)    79-t5ob-2h2o    =>    81-t6ob-1h2o    !0.030442000000221014 hartree
+39)    81-t6ob-1h2o    =>    79-t5ob-2h2o    !0.0371660000000702 hartree
+40)    16-t2-h2o    =>    18-t3-boh3    !0.056771999999909895 hartree
+41)    18-t3-boh3    =>    16-t2-h2o    !0.04243799999994735 hartree
+42)    59-t2-2h2o    =>    84-t3-boh3h2o    !0.05487200000015946 hartree
+43)    84-t3-boh3h2o    =>    59-t2-2h2o    !0.06659600000011778 hartree
+44)    15-t2  +  h2o    =>    16-t2-h2o    !0.014910089005297777 hartree
+45)    16-t2-h2o    =>    15-t2  +  h2o    !0.005952089005404559 hartree
+46)    18-t3-boh3    =>    19-t3  +  boh3    !0.005952089005404559 hartree
+47)    19-t3  +  boh3    =>    18-t3-boh3    !0.030519089005338174 hartree
+48)    16-t2-h2o  +  h2o    =>    59-t2-2h2o    !0.010831089005478134 hartree
+49)    59-t2-2h2o    =>    16-t2-h2o  +  h2o    !0.005952089005404559 hartree
+50)    61-t3ob-2h2o    =>    62-t3ob-h2o  +  h2o    !0.008311089005019312 hartree
+51)    62-t3ob-h2o  +  h2o    =>    61-t3ob-2h2o    !0.005952089005404559 hartree
+52)    62-t3ob-h2o    =>    63-t3ob  +  h2o    !0.005952089005404559 hartree
+53)    63-t3ob  +  h2o    =>    62-t3ob-h2o    !0.02255008900510802 hartree
+54)    65-t4ob  +  h2o    =>    67-t4ob-h2o    !0.005952089005404559 hartree
+55)    67-t4ob-h2o    =>    65-t4ob  +  h2o    !0.009849089005456335 hartree
+56)    69-t4-boh3    =>    21-t4  +  boh3    !0.006406089005849935 hartree
+57)    21-t4  +  boh3    =>    69-t4-boh3    !0.005952089005404559 hartree
+58)    67-t4ob-h2o  +  h2o    =>    70-t4ob-2h2o    !0.02610508900579589 hartree
+59)    70-t4ob-2h2o    =>    67-t4ob-h2o  +  h2o    !0.005952089005404559 hartree
+60)    72-t4-boh3h2o    =>    69-t4-boh3  +  h2o    !0.005952089005404559 hartree
+61)    69-t4-boh3  +  h2o    =>    72-t4-boh3h2o    !0.015802089005774178 hartree
+62)    74-t5ob-rh    =>    75-t5ob  +  naph-t    !0.005952089005404559 hartree
+63)    75-t5ob  +  naph-t    =>    74-t5ob-rh    !0.012664089005738788 hartree
+64)    75-t5ob  +  h2o    =>    76-t5ob-1h2o    !0.005952089005404559 hartree
+65)    76-t5ob-1h2o    =>    75-t5ob  +  h2o    !0.013195089005421323 hartree
+66)    76-t5ob-1h2o  +  h2o    =>    79-t5ob-2h2o    !0.01557708900554644 hartree
+67)    79-t5ob-2h2o    =>    76-t5ob-1h2o  +  h2o    !0.005952089005404559 hartree
+68)    78-t6ob  +  h2o    =>    81-t6ob-1h2o    !0.008132089005357557 hartree
+69)    81-t6ob-1h2o    =>    78-t6ob  +  h2o    !0.005952089005404559 hartree
+70)    84-t3-boh3h2o    =>    18-t3-boh3  +  h2o    !0.02713108900525185 hartree
+71)    18-t3-boh3  +  h2o    =>    84-t3-boh3h2o    !0.005952089005404559 hartree
+72)    78-t6ob    =>    00-lpdoh2  +  boh3    !0.005952089005404559 hartree
+73)    00-lpdoh2  +  boh3    =>    78-t6ob    !0.01746108900579202 hartree

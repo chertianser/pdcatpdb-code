@@ -1,0 +1,36 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,structure,reference_gibbs
+0,18,T4OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,306-t4ob,-15.30935074043206
+0,19,T4OB-T5OB,True,True,True,bottom,1.5,#b65a85,#b65a85,o,314-ts-t4ob-t5ob,-2.7095862806502597
+0,20,T5OB + R-H,True,True,False,bottom,2.5,#b65a85,#b65a85,o,315-t5ob-rh,-11.759529158401758
+0,21,T5OB + R-H // T5OB,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-8.293166083640763
+0,22,T5OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,316-t5ob,-13.047178775880518
+0,23,T5OB // T5OB + H$_2$O,False,True,True,bottom,1.5,#b65a85,#b65a85,x,diffusion,-9.580815701119523
+0,24,T5OB + H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,317-t5ob-1h2o,-18.425563217367234
+0,25,T5OB + H$_2$O // T5OB + 2H$_2$O,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-8.645198947396135
+0,26,T5OB + 2H$_2$O,True,True,False,bottom,3.5,#b65a85,#b65a85,o,320-t5ob-2h2o,-12.11156202215713
+0,27,T5OB-T6OB-6MPS,True,True,True,top,-3.5,#b65a85,#b65a85,o,321-ts-t5ob-t6ob-6mps,6.273213073684152
+0,28,T6OB + H$_2$O,True,True,False,top,-1.5,#b65a85,#b65a85,o,322-t6ob-1h2o,-16.489696223311164
+0,29,T6OB + H$_2$O // T6OB,False,True,True,top,-1.5,#b65a85,#b65a85,x,diffusion,-13.023333148550169
+0,30,T6OB,True,True,False,top,-1.5,#b65a85,#b65a85,o,319-t6ob,-19.094488407881705
+0,31,T6OB // PDT,False,True,True,top,-1.5,black,black,x,diffusion,-15.62812533312071
+0,32,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
+1,18,T4OB,False,True,False,top,-1.5,#2F6800,#2F6800,o,306-t4ob,-15.30935074043206
+1,19,T4OB // T4OB + H$_2$O,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-8.802703846687404
+1,20,T4OB + H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,308-t4ob-h2o,-12.269066921448399
+1,21,T4OB + H$_2$O // T4OB + 2H$_2$O,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-1.263803990148412
+1,22,T4OB + 2H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,311-t4ob-2h2o,-4.7301670649094065
+1,23,T4OB-T4-6MPS,True,True,True,top,-3.5,#2F6800,#2F6800,o,312-ts-t4ob-t4-6mps,14.086334607850446
+1,24,T4 + B(OH)$_3$ + H$_2$O,True,True,False,top,-1.5,#2F6800,#2F6800,o,313-t4-boh3h2o,-6.448288240332126
+1,25,T4 + B(OH)$_3$ + H$_2$O // T4 + B(OH)$_3$,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-2.981925165571132
+1,26,T4 + B(OH)$_3$,True,True,False,top,-1.5,#2F6800,#2F6800,o,310-t4-boh3,-12.993212954265074
+1,27,T4 + B(OH)$_3$ // T4,False,True,True,top,-1.5,#2F6800,#2F6800,x,diffusion,-4.27961493655893
+1,28,T4,True,True,False,top,-1.5,#2F6800,#2F6800,o,21-t4,-7.7459780113199255
+2,24,T5OB + H$_2$O,False,True,False,top,-1.5,#b65a85,#b65a85,o,317-t5ob-1h2o,-18.425563217367234
+2,27,T5OB-T6OB-4MPS,True,True,True,bottom,1.5,#b65a85,#b65a85,o,318-ts-t5ob-t6ob-4mps,8.183352175051038
+2,30,T6OB,False,True,False,top,-1.5,#b65a85,#b65a85,o,319-t6ob,-19.094488407881705
+3,20,T4OB + H$_2$O,False,True,False,top,-1.5,#2F6800,#2F6800,o,308-t4ob-h2o,-12.269066921448399
+3,23,T4OB-T4-4MPS,True,True,True,bottom,1.5,#2F6800,#2F6800,o,309-ts-t4ob-t4-4mps,15.357041467745166
+3,26,T4 + B(OH)$_3$,False,True,False,top,-1.5,#2F6800,#2F6800,o,310-t4-boh3,-12.993212954265074
+4,28,T4,False,True,False,top,-1.5,#204195,#204195,o,21-t4,-7.7459780113199255
+4,30,T4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-4.27961493655893
+4,32,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675

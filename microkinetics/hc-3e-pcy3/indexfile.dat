@@ -1,0 +1,72 @@
+#### compounds ####
+0)    00-lpdoh2    -1324.979372 hartree
+1)    01-rxt    -1886.126157 hartree
+2)    03-c1    -1886.120331 hartree
+3)    05-c2    -1886.169783 hartree
+4)    09-c3    -1710.252953 hartree
+5)    11-c4    -1710.227459 hartree
+6)    13-t1    -1886.122615 hartree
+7)    15-t2    -1886.127013 hartree
+8)    19-t3    -1710.222805 hartree
+9)    21-t4    -1710.236097 hartree
+10)    85-c2dim    -1633.9120535 hartree
+11)    86-c2-naphboh2    -2447.320472 hartree
+12)    88-hc1-boh3    -2447.328731 hartree
+13)    89-hc1    -2195.059693 hartree
+14)    91-hc2    -2195.061176 hartree
+15)    93-hc3    -2195.061524 hartree
+16)    95-lpd0boh3    -1425.702784 hartree
+17)    96-hc4    -1942.790057 hartree
+18)    98-lpd0    -1173.415565 hartree
+19)    100-l2pd2oh4    -2649.958744 hartree
+20)    naphboh2    -561.150376 hartree
+21)    h2o    -76.368394 hartree
+22)    boh3    -252.272407 hartree
+23)    naph-c    -385.286152 hartree
+24)    naph-t    -385.286152 hartree
+25)    binaph    -769.393717 hartree
+#### reactions ####
+0)    100-l2pd2oh4    =>    00-lpdoh2  +  00-lpdoh2    !0.005952089005404559 hartree
+1)    00-lpdoh2  +  00-lpdoh2    =>    100-l2pd2oh4    !0.005952089005404559 hartree
+2)    00-lpdoh2  +  naphboh2    =>    01-rxt    !0.00954308900554679 hartree
+3)    01-rxt    =>    00-lpdoh2  +  naphboh2    !0.005952089005404559 hartree
+4)    01-rxt    =>    03-c1    !0.022397999999839158 hartree
+5)    03-c1    =>    01-rxt    !0.01657199999999648 hartree
+6)    03-c1    =>    05-c2    !0.0074180000001433655 hartree
+7)    05-c2    =>    03-c1    !0.056870000000117216 hartree
+8)    05-c2  +  h2o    =>    09-c3  +  boh3    !0.01558300000010604 hartree
+9)    09-c3  +  boh3    =>    05-c2  +  h2o    !0.0027659999998377316 hartree
+10)    09-c3    =>    11-c4    !0.04435399999988476 hartree
+11)    11-c4    =>    09-c3    !0.018859999999904176 hartree
+12)    11-c4    =>    naph-c  +  00-lpdoh2    !0.005952089005404559 hartree
+13)    naph-c  +  00-lpdoh2    =>    11-c4    !0.04401708900536505 hartree
+14)    01-rxt    =>    13-t1    !0.014130000000022847 hartree
+15)    13-t1    =>    01-rxt    !0.010588000000097963 hartree
+16)    13-t1    =>    15-t2    !0.018720000000030268 hartree
+17)    15-t2    =>    13-t1    !0.023118000000067696 hartree
+18)    15-t2  +  h2o    =>    19-t3  +  boh3    !0.02394500000013977 hartree
+19)    19-t3  +  boh3    =>    15-t2  +  h2o    !0.023750000000063665 hartree
+20)    19-t3    =>    21-t4    !0.028155000000197106 hartree
+21)    21-t4    =>    19-t3    !0.04144700000006196 hartree
+22)    21-t4    =>    naph-t  +  00-lpdoh2    !0.005952089005404559 hartree
+23)    naph-t  +  00-lpdoh2    =>    21-t4    !0.03537908900534603 hartree
+24)    86-c2-naphboh2    =>    88-hc1-boh3    !0.012709999999970023 hartree
+25)    88-hc1-boh3    =>    86-c2-naphboh2    !0.020969000000150118 hartree
+26)    89-hc1    =>    91-hc2    !0.009949000000233355 hartree
+27)    91-hc2    =>    89-hc1    !0.011432000000240805 hartree
+28)    91-hc2    =>    93-hc3    !0.024343000000044412 hartree
+29)    93-hc3    =>    91-hc2    !0.02469100000007529 hartree
+30)    93-hc3    =>    95-lpd0boh3  +  binaph    !0.015061000000059721 hartree
+31)    95-lpd0boh3  +  binaph    =>    93-hc3    !0.050037999999858584 hartree
+32)    96-hc4    =>    98-lpd0  +  binaph    !0.007725999999820488 hartree
+33)    98-lpd0  +  binaph    =>    96-hc4    !0.026951000000053682 hartree
+34)    05-c2    =>    85-c2dim  +  boh3    !0.005952089005404559 hartree
+35)    85-c2dim  +  boh3    =>    05-c2    !0.020629589005238813 hartree
+36)    05-c2  +  naphboh2    =>    86-c2-naphboh2    !0.005952089005404559 hartree
+37)    86-c2-naphboh2    =>    05-c2  +  naphboh2    !0.006265089005410118 hartree
+38)    88-hc1-boh3    =>    89-hc1  +  boh3    !0.005952089005404559 hartree
+39)    89-hc1  +  boh3    =>    88-hc1-boh3    !0.009321089005425165 hartree
+40)    93-hc3    =>    96-hc4  +  boh3    !0.005952089005404559 hartree
+41)    96-hc4  +  boh3    =>    93-hc3    !0.006892089005305024 hartree
+42)    95-lpd0boh3    =>    98-lpd0  +  boh3    !0.02076408900552451 hartree
+43)    98-lpd0  +  boh3    =>    95-lpd0boh3    !0.005952089005404559 hartree
