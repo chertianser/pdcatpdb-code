@@ -1,18 +1,51 @@
-﻿line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker
 0,0,$\mu$-RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,2,Pd-RXT,FALSE,TRUE,TRUE,bottom,1.5,black,black,x
-0,4,RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,6,RXT-INT1,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
-0,8,INT1,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,10,INT1-INT2,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
-0,12,INT2,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,14,INT2 // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,black,black,x
-0,16,INT2 + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,18,INT2-INT3,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
-0,20,INT3 + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,22,INT3 // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,black,black,x
-0,24,INT3,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,26,INT3-INT4,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
-0,28,INT4,TRUE,TRUE,FALSE,top,-1.5,black,black,o
-0,30,INT4-PDT,FALSE,TRUE,TRUE,top,-1.5,black,black,x
-0,32,PDT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,1,Pd-RXT,FALSE,TRUE,TRUE,bottom,1.5,black,black,x
+0,2,RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,3,RXT-INT1,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,4,INT1,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,5,INT1-INT2,TRUE,TRUE,TRUE,bottom,1.5,black,black,o
+0,6,INT2,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,8,INT2 // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,10,INT2 + H$_2$O,TRUE,TRUE,FALSE,bottom,2.5,black,black,o
+0,12,INT2-INT3,TRUE,TRUE,TRUE,bottom,5.5,black,black,o
+0,14,INT3 + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,16,INT3 // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,18,INT3,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,20,INT3-INT4,TRUE,TRUE,TRUE,bottom,7.5,black,black,o
+0,22,INT4,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+0,24,INT4-PDT,FALSE,TRUE,TRUE,top,-1.5,black,black,x
+0,26,PDT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+1,6,INT2,FALSE,FALSE,FALSE,top,-1.5,darkred,darkred,o
+1,8,INT2-INT5C,TRUE,TRUE,TRUE,top,-5.5,darkred,darkred,o
+1,10,INT5C,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,12,INT5C-INT6C,TRUE,TRUE,TRUE,bottom,1.5,darkred,darkred,o
+1,14,INT6C,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,16,INT6C // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,darkred,darkred,x
+1,18,INT6C + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,20,INT6C-INT7C,TRUE,TRUE,TRUE,bottom,1.5,darkred,darkred,o
+1,22,INT7C + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,24,INT7C // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,darkred,darkred,x
+1,26,INT7C,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,28,INT7C-INT8C,TRUE,TRUE,TRUE,bottom,1.5,darkred,darkred,o
+1,30,INT8C,TRUE,TRUE,FALSE,top,-1.5,darkred,darkred,o
+1,32,INT8C-R$\mu$-RXT,FALSE,TRUE,TRUE,top,-1.5,darkred,darkred,x
+1,34,R$\mu$-RXT,TRUE,TRUE,FALSE,top,-1.5,black,black,o
+2,6,INT2,FALSE,FALSE,FALSE,top,-1.5,darkblue,darkblue,o
+2,8,INT2-INT5T,TRUE,TRUE,TRUE,bottom,1.5,darkblue,darkblue,o
+2,10,INT5T,TRUE,TRUE,FALSE,top,-2.5,darkblue,darkblue,o
+2,12,INT5T-INT6T,TRUE,TRUE,TRUE,bottom,1.5,darkblue,darkblue,o
+2,14,INT6T,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,16,INT6T // H$_2$O,FALSE,TRUE,TRUE,top,-1.5,darkblue,darkblue,x
+2,18,INT6T + H$_2$O,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,20,INT6T-INT7T,TRUE,TRUE,TRUE,bottom,4.5,darkblue,darkblue,o
+2,22,INT7T + B(OH)$_3$,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,24,INT7T // B(OH)$_3$,FALSE,TRUE,TRUE,top,-1.5,darkblue,darkblue,x
+2,26,INT7T,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,28,INT7T-INT8T,TRUE,TRUE,TRUE,bottom,1.5,darkblue,darkblue,o
+2,30,INT8T,TRUE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+2,32,INT8T-R$\mu$-RXT,FALSE,TRUE,TRUE,top,-1.5,darkblue,darkblue,x
+2,34,R$\mu$-RXT,FALSE,TRUE,FALSE,top,-1.5,darkblue,darkblue,o
+3,14,INT6C,FALSE,TRUE,FALSE,top,-1.5,darkgreen,darkgreen,o
+3,15,INT6C-RE,TRUE,TRUE,TRUE,bottom,1.5,darkgreen,darkgreen,o
+3,16,RE-PDT,TRUE,TRUE,FALSE,top,-1.5,darkgreen,darkgreen,o
