@@ -1,0 +1,45 @@
+#### compounds ####
+0)    e00-lpdoh2    -1324.979372 hartree
+1)    e01-ecrxt    -2120.331905 hartree
+2)    e03-ec1    -2120.324282 hartree
+3)    e05-ec2    -2120.376632 hartree
+4)    e09-ec3    -1710.252953 hartree
+5)    e11-ec4    -1710.227459 hartree
+6)    e12-etrxt    -2120.337965 hartree
+7)    e14-et1    -2120.334187 hartree
+8)    e16-et2    -2120.327714 hartree
+9)    e20-et3    -1710.222805 hartree
+10)    e22-et4    -1710.236097 hartree
+11)    e100-l2pd2oh4    -2649.958744 hartree
+12)    naphbpin    -795.362629 hartree
+13)    h2o    -76.368394 hartree
+14)    bpinoh    -486.48039 hartree
+15)    naph-c    -385.286152 hartree
+16)    naph-t    -385.286152 hartree
+#### reactions ####
+0)    e100-l2pd2oh4    =>    e00-lpdoh2  +  e00-lpdoh2    !0.005570752898165665 hartree
+1)    e00-lpdoh2  +  e00-lpdoh2    =>    e100-l2pd2oh4    !0.005570752898165665 hartree
+2)    e00-lpdoh2  +  naphbpin    =>    e01-ecrxt    !0.015666752898141567 hartree
+3)    e01-ecrxt    =>    e00-lpdoh2  +  naphbpin    !0.005570752898165665 hartree
+4)    e00-lpdoh2  +  naphbpin    =>    e12-etrxt    !0.009606752897980186 hartree
+5)    e12-etrxt    =>    e00-lpdoh2  +  naphbpin    !0.005570752898165665 hartree
+6)    e01-ecrxt    =>    e03-ec1    !0.018854999999803113 hartree
+7)    e03-ec1    =>    e01-ecrxt    !0.011231999999836262 hartree
+8)    e03-ec1    =>    e05-ec2    !0.002492999999958556 hartree
+9)    e05-ec2    =>    e03-ec1    !0.05484299999989162 hartree
+10)    e05-ec2  +  h2o    =>    e09-ec3  +  bpinoh    !0.012365999999929045 hartree
+11)    e09-ec3  +  bpinoh    =>    e05-ec2  +  h2o    !0.0006829999997535197 hartree
+12)    e09-ec3    =>    e11-ec4    !0.04435399999988476 hartree
+13)    e11-ec4    =>    e09-ec3    !0.018859999999904176 hartree
+14)    e11-ec4    =>    naph-c  +  e00-lpdoh2    !0.005570752897938291 hartree
+15)    naph-c  +  e00-lpdoh2    =>    e11-ec4    !0.04363575289789878 hartree
+16)    e12-etrxt    =>    e14-et1    !0.015674000000217347 hartree
+17)    e14-et1    =>    e12-etrxt    !0.011895999999978812 hartree
+18)    e14-et1    =>    e16-et2    !0.021788000000015018 hartree
+19)    e16-et2    =>    e14-et1    !0.015315000000100554 hartree
+20)    e16-et2  +  h2o    =>    e20-et3  +  bpinoh    !0.023020000000087748 hartree
+21)    e20-et3  +  bpinoh    =>    e16-et2  +  h2o    !0.030107000000043627 hartree
+22)    e20-et3    =>    e22-et4    !0.028155000000197106 hartree
+23)    e22-et4    =>    e20-et3    !0.04144700000006196 hartree
+24)    e22-et4    =>    naph-t  +  e00-lpdoh2    !0.005570752897938291 hartree
+25)    naph-t  +  e00-lpdoh2    =>    e22-et4    !0.034997752897879764 hartree

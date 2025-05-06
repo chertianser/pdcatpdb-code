@@ -19,7 +19,7 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 1,21,C4-PDT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-4.964227866253546
 1,22,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
 2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
-2,4,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,12.659377868780503
+2,4,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,6.415657744138654
 2,6,T1,True,True,False,top,-1.5,#204195,#204195,o,13-t1,-0.3162648181278652
 2,8,T1-T2,True,True,True,bottom,1.5,#204195,#204195,o,14-ts-t1-t2,12.900969049072899
 2,10,T2,True,True,False,top,-1.5,#204195,#204195,o,15-t2,-6.544297203589568

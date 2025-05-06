@@ -1,0 +1,35 @@
+line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset,line_color,point_color,point_marker,structure,reference_gibbs
+1,0,[LPd(OH)$_2$]$_2$,True,True,False,top,-1.5,#C04A1B,black,o,e00-lpdoh2,0.0
+1,1,Pd-ECRXT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,13.419605964358023
+1,2,ECRXT,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,e01-ecrxt,9.953242889597028
+1,4,ECRXT-EC1,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,e02-ts-ecrxt-ec1,20.028536388314865
+1,6,EC1,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,e03-ec1,14.213405294011134
+1,8,EC1-EC2,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,e04-ts-ec1-ec2,20.07559960528459
+1,10,EC2,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,e05-ec2,-19.249169514908136
+1,11,EC2 // H$_2$O,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-8.907184189022225
+1,12,EC2 + H$_2$O,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,e06-ec2-h2o,-12.37354726378322
+1,13,EC2-EC3,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,e07-ts-ec2-ec3,-8.758464687083105
+1,14,EC3 + BpinOH,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,e08-ec3-bpinoh,-16.635592196373885
+1,15,EC3 // BpinOH,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-11.781177974750905
+1,16,EC3,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,e09-ec3,-15.2475410495119
+1,18,EC3-EC4,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,e10-ts-ec3-ec4,20.35609637892638
+1,20,EC4,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,e11-ec4,8.221944012943384
+1,21,EC4-PDT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,11.688307087704379
+1,22,PDT,True,True,False,top,-1.5,black,black,o,pdt,-23.645187739000768
+2,0,[LPd(OH)$_2$]$_2$,False,True,False,top,-1.5,#204195,black,o,e00-lpdoh2,0.0
+2,1,Pd-ETRXT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,6.205128550137942
+2,2,ETRXT,True,True,False,top,-1.5,#204195,#204195,o,e12-etrxt,2.738765475376947
+2,4,ETRXT-ET1,True,True,True,top,-5.5,#204195,#204195,o,e13-ts-etrxt-et1,15.666089925770263
+2,6,ET1,True,True,False,top,-1.5,#204195,#204195,o,e14-et1,6.790594706035509
+2,8,ET1-ET2,True,True,True,top,-5.5,#204195,#204195,o,e15-ts-et1-et2,14.882957994298266
+2,10,ET2,True,True,False,top,-1.5,#204195,#204195,o,e16-et2,-1.1894443717291459
+2,11,ET2 // H$_2$O,False,True,True,top,-1.5,#204195,#204195,x,diffusion,7.907561986951231
+2,12,ET2 + H$_2$O,True,True,False,top,-1.5,#204195,#204195,o,e17-et2-h2o,4.441198912190236
+2,13,ET2-ET3,True,True,True,bottom,1.5,#204195,#204195,o,e18-ts-et2-et3,17.423744203744324
+2,14,ET3 + BpinOH,True,True,False,top,-1.5,#204195,#204195,o,e19-et3-bpinoh,1.0237818471053968
+2,15,ET3 // BpinOH,False,True,True,top,-1.5,#204195,#204195,x,diffusion,4.490144921866391
+2,16,ET3,True,True,False,top,-1.5,#204195,#204195,o,e20-et3,-2.612008544673309
+2,18,ET3-ET4,True,True,True,top,-7.5,#204195,#204195,o,e21-ts-et3-et4,17.037198315048204
+2,20,ET4,True,True,False,top,-1.5,#204195,#204195,o,e22-et4,-5.263236436440911
+2,21,ET4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-1.7968733616799164
+2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-23.645187739000768
