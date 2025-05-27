@@ -18,7 +18,7 @@ class PlotPDB():
         self.table_titles = ["calibration curv", "PDB vs CPL", "PDB vs Phosphine",
                              "PDB_JP vs Base", "PDB_CyJP vs Base", "PDB_noP vs Base", "PDB vs Base",
                              "kinetics Bpin raw", "kinetics BOH2 raw", "kinetics summary",
-                             "kinetics Bpin K3PO4 raw", "kinetics summary K3PO4",
+                             "kinetics Bpin K3PO4 raw", "kinetics summary K3PO4", "kinetics Bpin K3PO4 CyJP raw",
                              "4 L 0 H2O", "4 L 0 H2O NaphBeg", "4 L 20 H2O", "4 L 100 H2O",
                              "PCy3 0 20 100 H2O", "PtBu3 0 20 100 H2O", "CyJP 0 20 100 H2O", "JP 0 20 100 H2O",
                              "vary Pd load", "JP eq", "PdOAc2 Pd2dba3 Buchwald"
@@ -79,14 +79,14 @@ class PlotPDB():
             #          ))
 
             # eq for kinetic moniter curve
-            # eq = ("$%s_{%s} = %s \\ %s"
-            #       % (y_name.split('_')[0], y_name.split('_')[1][:-2],
-            #          self.format_coefficient(model.coef_[0]),
-            #          x_name.split('/')[0]
-            #          )
-            #       )
+            eq = ("$%s_{%s} = %s \\ %s"
+                  % (y_name.split('_')[0], y_name.split('_')[1][:-2],
+                     self.format_coefficient(model.coef_[0]),
+                     x_name.split('/')[0]
+                     )
+                  )
 
-            eq = "$\\it{ln(k)} = \\frac{%s}{T} " % self.format_coefficient(model.coef_[0])
+            # eq = "$\\it{ln(k)} = \\frac{%s}{T} " % self.format_coefficient(model.coef_[0])
             if model.intercept_ >= 0:
                 eq += "+%s$" % self.format_coefficient(model.intercept_)
             else:
@@ -409,6 +409,15 @@ pdb = PlotPDB()
 
 
 # kinetic monitor
+pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 CyJP raw", x_name="time / min", y_name="Naph_333K 1",
+                         linear_fitting=[2,10],
+                         saveas="kinetics CyJP 333K 1"
+                         )
+pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 CyJP raw", x_name="time / min", y_name="Naph_333K 2",
+                         linear_fitting=[2,10],
+                         saveas="kinetics CyJP 333K 2"
+                         )
+
 # pdb.plot_scatter_err_fit(table_title="kinetics summary K3PO4", x_name="1/T (K-1)", y_name="ln(k)_avg", y_error="ln(k)_err",
 #                          linear_fitting=[0,4],
 #                          saveas="Kinetic fitting"
@@ -530,17 +539,17 @@ pdb = PlotPDB()
 #                                 from_bottom = 0.25,
 #                                 saveas = "Vary Pd loading Naph"
 #                                 )
-pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
-                                x_name = "phosphine",
-                                y_name = "BiNaph / %",
-                                x_group_nums=[6,6,6],
-                                y_error = "err(BiNaph) / %",
-                                x_tick_rot = 75,
-                                fig_width = 15,
-                                fig_height = 10,
-                                from_bottom = 0.25,
-                                saveas = "Vary Pd loading BiNaph rerange"
-                                )
+# pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
+#                                 x_name = "phosphine",
+#                                 y_name = "BiNaph / %",
+#                                 x_group_nums=[6,6,6],
+#                                 y_error = "err(BiNaph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "Vary Pd loading BiNaph rerange"
+#                                 )
 
 # PDB vs Phosphine extended
 # pdb.plot_bar_err_multi(table_title="PDB vs Phosphine",
