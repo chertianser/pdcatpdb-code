@@ -20,10 +20,13 @@ class PlotPDB():
         self.table_titles = ["calibration curv", "PDB vs CPL", "PDB vs Phosphine",
                              "PDB_JP vs Base", "PDB_CyJP vs Base", "PDB_noP vs Base", "PDB vs Base",
                              "kinetics Bpin raw", "kinetics BOH2 raw", "kinetics summary",
-                             "kinetics Bpin K3PO4 raw", "kinetics summary K3PO4",
+                             "kinetics Bpin K3PO4 raw", "kinetics summary K3PO4", "kinetics summary K3PO4 VT2",
+                             #"kinetics Bpin K3PO4 CyJP raw",
+                             "kinetics Bpin vary Pd JP raw", "Pd JP load summary", "kinetics Bpin vary Pd CyJP raw","Pd CyJP load summary",
                              "4 L 0 H2O", "4 L 0 H2O NaphBeg", "4 L 20 H2O", "4 L 100 H2O",
                              "PCy3 0 20 100 H2O", "PtBu3 0 20 100 H2O", "CyJP 0 20 100 H2O", "JP 0 20 100 H2O",
-                             "vary Pd load", "JP eq", "PdOAc2 Pd2dba3 Buchwald"
+                             "vary Pd load", "JP eq", "PdOAc2 Pd2dba3 Buchwald", "substrate dependency", "PdNP",
+                             
                              ]
         self.data_all = {}
         for table_title in self.table_titles:
@@ -72,8 +75,8 @@ class PlotPDB():
             y_fit = model.predict(x)
             ax.plot(x, y_fit, linestyle = '--')
 
-            # eq = ""
-            # eq for calibration curve
+            eq = ""
+            # # eq for calibration curve
             # eq = ("$\\frac{%s_{%s}}{%s_{%s}} = %s \\ \\frac{%s_{%s}}{%s_{%s}}"
             #       % (y_name.split('/')[0].split('_')[0], y_name.split('/')[0].split('_')[1],
             #          y_name.split('/')[1].split('_')[0], y_name.split('/')[1].split('_')[1],
@@ -82,7 +85,7 @@ class PlotPDB():
             #          x_name.split('/')[1].split('_')[0], x_name.split('/')[1].split('_')[1],
             #          ))
 
-            # eq for kinetic moniter curve
+            # # eq for kinetic moniter curve
             # eq = ("$%s_{%s} = %s \\ %s"
             #       % (y_name.split('_')[0], y_name.split('_')[1][:-2],
             #          self.format_coefficient(model.coef_[0]),
@@ -90,7 +93,13 @@ class PlotPDB():
             #          )
             #       )
 
-            eq = "$\\it{ln(k)} = \\frac{%s}{T} " % self.format_coefficient(model.coef_[0])
+            # # eq for kinetic VT exp
+            # eq = "$\\it{ln(k)} = \\frac{%s}{T} " % self.format_coefficient(model.coef_[0])
+
+            #  eq for kinetic vary loading exp
+            eq = "$\\it{ln(k)} = \\it{ln(%s)} " % self.format_coefficient(model.coef_[0])
+
+
             if model.intercept_ >= 0:
                 eq += "+%s$" % self.format_coefficient(model.intercept_)
             else:
@@ -99,17 +108,23 @@ class PlotPDB():
                                                  y[linear_fitting[0]:linear_fitting[1]])
 
             ax.legend([eq])
-        # axes label for calibration curve
+        # # axes label for calibration curve
         # ax.set_xlabel("$(%s_{%s}\\ /\\ %s_{%s})$" % (x_name.split('/')[0].split('_')[0], x_name.split('/')[0].split('_')[1],
         #                                        x_name.split('/')[1].split('_')[0], x_name.split('/')[1].split('_')[1]))
         # ax.set_ylabel("$(%s_{%s}\\ /\\ %s_{%s})$" % (y_name.split('/')[0].split('_')[0], y_name.split('/')[0].split('_')[1],
         #                                        y_name.split('/')[1].split('_')[0], y_name.split('/')[1].split('_')[1]))
 
+        # # x, y label for kinetic monitoring vs time
         # ax.set_xlabel("time / min")
         # ax.set_ylabel("Naph / %")
         # ax.set_ylim(-0.5, ceil(max(y)))
 
-        ax.set_xlabel("$\\frac{1}{T} \\ /\\ K^{-1}$")
+        # # x, y label for kinetic VT exp
+        # ax.set_xlabel("$\\frac{1}{T} \\ /\\ K^{-1}$")
+        # ax.set_ylabel("$\\it{ln(k_{init})}$")
+
+        # x, y label for kinetic loading exp
+        ax.set_xlabel("$\\it{\\ln(\\mathrm{mol}\\%)}$")
         ax.set_ylabel("$\\it{ln(k_{init})}$")
 
 
@@ -239,7 +254,7 @@ class PlotPDB():
         ax.set_xlabel(x_name)
         ax.set_ylabel(y_name)
         # ax.legend()
-        ax.set_ylim((0, 20))
+        ax.set_ylim((0, 100))
         plt.subplots_adjust(bottom=from_bottom, top=0.95, left = 0.1, right = 0.98)
         # plt.figure(figsize=(10, 6))
         if saveas:
@@ -409,12 +424,196 @@ class PlotPDB():
         plt.clf()
 
 
-pdb = PlotPDB(dropna=False)
-# kinetic monitor
-pdb.plot_scatter_err_fit(table_title="kinetics summary K3PO4", x_name="1/T (K-1)", y_name="ln(k)_avg", y_error="ln(k)_err",
-                         linear_fitting=[0,4],
-                         saveas="Kinetic fitting"
+# kinetics with K3PO4
+
+# pdb.plot_scatter_err_fit(table_title="kinetics summary K3PO4 VT2", x_name="1/T (K-1)", y_name="ln(k)_avg",
+#                          y_error="ln(k)_err",
+#                          linear_fitting=[0,None],
+#                          saveas="Initial rate vs T-1 of 2-NaphBpin protodeboronation with K3PO4")
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_343K 1",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 343 K_1 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_343K 2",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 343 K_2 new")
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_338K 1",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 338 K_1 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_338K 2",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 338 K_2 new")
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_333K 1",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K_1 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_343K 2",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K_2 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_333K 3",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K_3 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_333K 4",
+#                          linear_fitting=[5,10],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K_4 new")
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_328K 1",
+#                          linear_fitting=[5,14],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 328 K_1 new")
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_328K 2",
+#                          linear_fitting=[5,14],
+#                          saveas="Reaction monitoring of 2-NaphBpin protodeboronation with K3PO4 at 328 K_2 new")
+
+
+# # kinetic monitor vary Pd CyJP
+
+pdb.plot_scatter_err_fit(table_title="Pd CyJP load summary", x_name="ln(mol%)", y_name="ln(k)_avg", y_error="ln(k)_err",
+                         linear_fitting=[0,3],
+                         saveas="Kinetic fitting vary Pd CyJP"
                          )
+
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_05 1",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 5 mol% Pd CyJohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_05 2",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 5 mol% Pd CyJohnPhos_2"
+#                          )
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_10 1",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd CyJohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_10 2",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd CyJohnPhos_2"
+#                          )
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_15 1",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 15 mol% Pd CyJohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd CyJP raw", x_name="time / min", y_name="Naph_15 2",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 15 mol% Pd CyJohnPhos_2"
+#                          )
+
+# # kinetic monitor vary Pd JP
+
+# pdb.plot_scatter_err_fit(table_title="Pd JP load summary", x_name="ln(mol%)", y_name="ln(k)_avg", y_error="ln(k)_err",
+#                          linear_fitting=[0,3],
+#                          saveas="Kinetic fitting vary Pd JP"
+#                          )
+
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_05 1",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 5 mol% Pd JohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_05 2",
+#                          linear_fitting=[4,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 5 mol% Pd JohnPhos_2"
+#                          )
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_10 1",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd JohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_10 2",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd JohnPhos_2"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_10 3",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd JohnPhos_3"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_10 4",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 10 mol% Pd JohnPhos_4"
+#                          )
+
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_15 1",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 15 mol% Pd JohnPhos_1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin vary Pd JP raw", x_name="time / min", y_name="Naph_15 2",
+#                          linear_fitting=[5,10],
+#                          saveas="Kinetic monitoring of 2-NaphBpin protodeboronation with K3PO4 at 333 K 15 mol% Pd JohnPhos_2"
+#                          )
+
+
+# # Calibtation Curve fulfill
+# pdb.plot_scatter_err_fit(table_title="calibration curv", x_name="m_MeONaph / m_oTP", y_name="Int_MeONaph / Int_oTP",
+#                          linear_fitting=[0,7],
+#                          saveas="Calibration curve of 2-MeONaph"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="calibration curv", x_name="m_CNNaph / m_oTP", y_name="Int_CNNaph / Int_CNNaph",
+#                          linear_fitting=[0,7],
+#                          saveas="Calibration curve of 2-CNNaph"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="calibration curv", x_name="m_CPL / m_oTP", y_name="Int_CPL / Int_oTP",
+#                          linear_fitting=[0,7],
+#                          saveas="Calibration curve of CPL"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="calibration curv", x_name="m_2-NaphBpin / m_oTP", y_name="Int_2-NaphBpin / Int_oTP",
+#                          linear_fitting=[0,7],
+#                          saveas="Calibration curve of 2-NaphBpin"
+#                          )
+
+# PdNP
+
+# pdb.plot_bar_err_multi_grouping(table_title="PdNP",
+#                                 x_name = "phosphine",
+#                                 y_name = "Naph / %",
+#                                 x_group_nums=[5,5,5,5],
+#                                 y_error = "err(Naph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "PdNP"
+#                                 )
+# substrate dependency
+# pdb.plot_bar_err_multi_grouping(table_title="substrate dependency",
+#                                 x_name = "Ligand",
+#                                 y_name = "Naph / %",
+#                                 x_group_nums=[7,7,7],
+#                                 y_error = "err(Naph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "Substrate dependency"
+#                                 )
+# pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
+#                                 x_name = "phosphine",
+#                                 y_name = "BiNaph / %",
+#                                 x_group_nums=[6,6,6],
+#                                 y_error = "err(BiNaph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "Vary Pd loading BiNaph rerange"
+#                                 )
+
+# # kinetic monitor
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 CyJP raw", x_name="time / min", y_name="Naph_333K 1",
+#                          linear_fitting=[2,10],
+#                          saveas="kinetics CyJP 333K 1"
+#                          )
+# pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 CyJP raw", x_name="time / min", y_name="Naph_333K 2",
+#                          linear_fitting=[2,10],
+#                          saveas="kinetics CyJP 333K 2"
+#                          )
+
+# pdb.plot_scatter_err_fit(table_title="kinetics summary K3PO4", x_name="1/T (K-1)", y_name="ln(k)_avg", y_error="ln(k)_err",
+#                          linear_fitting=[0,4],
+#                          saveas="Kinetic fitting"
+#                          )
 
 pdb.plot_scatter_err_fit(table_title="kinetics Bpin K3PO4 raw", x_name="time / min", y_name="Naph_328K 1",
                          linear_fitting=[5,14],
@@ -523,29 +722,28 @@ pdb.plot_bar_err_multi(table_title="PDB_JP vs Base",
                        )
 
 # vary Pd load
-
-pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
-                                x_name = "phosphine",
-                                y_name = "Naph / %",
-                                x_group_nums=[6,6,6],
-                                y_error = "err(Naph) / %",
-                                x_tick_rot = 75,
-                                fig_width = 15,
-                                fig_height = 10,
-                                from_bottom = 0.25,
-                                saveas = "Vary Pd loading Naph"
-                                )
-pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
-                                x_name = "phosphine",
-                                y_name = "BiNaph / %",
-                                x_group_nums=[6,6,6],
-                                y_error = "err(BiNaph) / %",
-                                x_tick_rot = 75,
-                                fig_width = 15,
-                                fig_height = 10,
-                                from_bottom = 0.25,
-                                saveas = "Vary Pd loading BiNaph rerange"
-                                )
+# pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
+#                                 x_name = "phosphine",
+#                                 y_name = "Naph / %",
+#                                 x_group_nums=[6,6,6],
+#                                 y_error = "err(Naph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "Vary Pd loading Naph"
+#                                 )
+# pdb.plot_bar_err_multi_grouping(table_title="vary Pd load",
+#                                 x_name = "phosphine",
+#                                 y_name = "BiNaph / %",
+#                                 x_group_nums=[6,6,6],
+#                                 y_error = "err(BiNaph) / %",
+#                                 x_tick_rot = 75,
+#                                 fig_width = 15,
+#                                 fig_height = 10,
+#                                 from_bottom = 0.25,
+#                                 saveas = "Vary Pd loading BiNaph rerange"
+#                                 )
 
 # PDB vs Phosphine extended
 
