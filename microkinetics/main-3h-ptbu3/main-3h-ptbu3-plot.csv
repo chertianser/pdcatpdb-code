@@ -5,7 +5,7 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 1,2,RXT,False,False,False,top,-1.5,#C04A1B,#C04A1B,o,01-rxt,2.3079801628320142
 1,4,RXT-C1,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,02-ts-rxt-c1,11.682972992675088
 1,6,C1,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,03-c1,11.27069921157514
-1,8,C1-C2,True,True,True,top,-5.5,#C04A1B,#C04A1B,o,04-ts-c1-c2,16.267557839693463
+1,8,C1-C2,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,04-ts-c1-c2,16.267557839693463
 1,10,C2,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,05-c2,-25.38276171097334
 1,11,C2 // H$_2$O,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-19.805456475508297
 1,12,C2 + H$_2$O,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,06-c2-h2o,-23.271819550269292
@@ -13,14 +13,14 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 1,14,C3 + B(OH)$_3$,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,08-c3-boh3,-19.00098948342956
 1,15,C3 // B(OH)$_3$,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,-14.980535466886778
 1,16,C3,True,True,False,top,-1.5,#C04A1B,#C04A1B,o,09-c3,-18.446898541647773
-1,18,C3-C4,True,True,True,top,-7.5,#C04A1B,#C04A1B,o,10-ts-c3-c4,15.476268284030422
+1,18,C3-C4,True,True,True,bottom,1.5,#C04A1B,#C04A1B,o,10-ts-c3-c4,15.476268284030422
 1,20,C4,True,True,False,bottom,1.5,#C04A1B,#C04A1B,o,11-c4,2.571534178033688
 1,21,C4-PDT,False,True,True,top,-1.5,#C04A1B,#C04A1B,x,diffusion,6.037897252794682
 1,22,PDT,True,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675
 2,2,RXT,False,False,False,top,-1.5,#204195,#204195,o,01-rxt,2.3079801628320142
 2,4,RXT-T1,True,True,True,top,-5.5,#204195,#204195,o,12-ts-rxt-t1,11.733173757652057
 2,6,T1,True,True,False,top,-1.5,#204195,#204195,o,13-t1,2.459837476452175
-2,8,T1-T2,True,True,True,bottom,1.5,#204195,#204195,o,14-ts-t1-t2,13.182093331916636
+2,8,T1-T2,True,True,True,top,-5.5,#204195,#204195,o,14-ts-t1-t2,13.182093331916636
 2,10,T2,True,True,False,top,-1.5,#204195,#204195,o,15-t2,-2.353788359971053
 2,11,T2 // H$_2$O,False,True,True,top,-1.5,#204195,#204195,x,diffusion,4.592742735453937
 2,12,T2 + H$_2$O,True,True,False,top,-1.5,#204195,#204195,o,16-t2-h2o,1.1263796606929422
@@ -28,7 +28,7 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 2,14,T3 + B(OH)$_3$,True,True,False,top,-1.5,#204195,#204195,o,18-t3-boh3,-1.8505256929388998
 2,15,T3 // B(OH)$_3$,False,True,True,top,-1.5,#204195,#204195,x,diffusion,1.6158373818220948
 2,16,T3,True,True,False,top,-1.5,#204195,#204195,o,19-t3,-3.496483269331448
-2,18,T3-T4,True,True,True,bottom,1.5,#204195,#204195,o,20-ts-t3-t4,13.164523064559932
+2,18,T3-T4,True,True,True,top,-7.5,#204195,#204195,o,20-ts-t3-t4,13.164523064559932
 2,20,T4,True,True,False,top,-1.5,#204195,#204195,o,21-t4,-6.398087475640515
 2,21,T4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-2.9317244008795202
 2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-24.967977891977675

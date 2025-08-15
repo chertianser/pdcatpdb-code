@@ -1,6 +1,6 @@
 I1,I2,P1,P2,Energy,Backwards,Flag,Ref_L,Ref_R
 100-l2pd2oh4,,00-lpdoh2,00-lpdoh2,-2649.958744,TRUE,diffusion-l2pd2oh4-lpdoh2,0,0
 00-lpdoh2,naphboh2,01-rxt,,-1886.124234,TRUE,diffusion-lpdoh2-rxt,0,0
-01-rxt,,05-c2,,-1886.105844,TRUE,rxt-c2,0,0
-01-rxt,h2o,21-t4,boh3,-1962.474238,TRUE,rxt-t4,0,0
+01-rxt,,05-c2,,-1886.105844,TRUE,c-tdts,0,0
+01-rxt,h2o,21-t4,boh3,-1962.474238,TRUE,t-tdts,0,0
 21-t4,,naph-t,00-lpdoh2,-1710.220221,TRUE,diffusion-t4-pdt,0,0
