@@ -29,7 +29,7 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 2,14,ET3 + BpinOH,True,True,False,top,-1.5,#204195,#204195,o,e19-et3-bpinoh,0.4784760401433964
 2,15,ET3 // BpinOH,False,True,True,top,-1.5,#204195,#204195,x,diffusion,3.944839114904391
 2,16,ET3,True,True,False,top,-1.5,#204195,#204195,o,e20-et3,-2.1313362208963054
-2,18,ET3-ET4,True,True,True,bottom,1.5,#204195,#204195,o,e21-ts-et3-et4,18.010465643146375
+2,18,ET3-ET4,True,True,True,bottom,1.5,#204195,#204195,o,e21-ts-et3-et4,15.962901947794148
 2,20,ET4,True,True,False,top,-1.5,#204195,#204195,o,e22-et4,-7.140117531270944
 2,21,ET4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-3.673754456509949
 2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-22.28851206985702

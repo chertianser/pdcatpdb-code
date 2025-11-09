@@ -34,24 +34,24 @@ line,point,label_name,is_label,is_point,is_TS,vertical_alignment,vertical_offset
 2,21,ET4-PDT,False,True,True,top,-1.5,#204195,#204195,x,diffusion,-0.2522585790442271
 2,22,PDT,False,True,False,top,-1.5,black,black,o,pdt,-22.28851206985702
 23,2,ETRXT,False,True,False,top,-1.5,#204195,#204195,o,,3.37223637686239
-23,4,ETRXT-EC1B,True,True,True,bottom,1.5,green,green,o,,15.645695865007287
-23,6,EC1B,True,True,False,bottom,1.5,green,green,o,,14.354281190319334
-23,8,EC1B-EC2B,True,True,True,bottom,1.5,green,green,o,,20.94124904389677
-23,10,EC2B,True,True,False,top,-1.5,green,green,o,,-23.827793021083714
-23,11,EC2B // H$_2$O,False,True,True,top,-1.5,green,green,x,,-19.885150190098287
-23,12,EC2B + H$_2$O,True,True,False,top,-1.5,green,green,o,,-23.351513264859282
-23,13,EC2B-EC3B,True,True,True,bottom,1.5,green,green,o,,-12.52760086046627
-23,14,EC3B + BpinOH,True,True,False,top,-1.5,green,green,o,,-17.00739161111957
-23,15,EC3B // BpinOH,False,True,True,top,-1.5,green,green,x,,-12.301069645051486
+23,4,ETRXT-EC1B,True,True,True,bottom,1.5,green,green,o,,
+23,6,EC1B,True,True,False,bottom,1.5,green,green,o,,
+23,8,EC1B-EC2B,True,True,True,bottom,1.5,green,green,o,,
+23,10,EC2B,True,True,False,top,-1.5,green,green,o,,
+23,11,EC2B // H$_2$O,False,True,True,top,-1.5,green,green,x,,
+23,12,EC2B + H$_2$O,True,True,False,top,-1.5,green,green,o,,
+23,13,EC2B-EC3B,True,True,True,bottom,1.5,green,green,o,,
+23,14,EC3B + BpinOH,True,True,False,top,-1.5,green,green,o,,
+23,15,EC3B // BpinOH,False,True,True,top,-1.5,green,green,x,,
 23,16,EC3,True,True,False,top,-1.5,green,green,o,,-15.767432719812481
 24,2,ECRXT,False,True,False,top,-1.5,purple,purple,o,,6.438248087964521
-24,4,ECRXT-ET1B,True,True,True,bottom,1.5,purple,purple,o,,21.890671008623748
-24,6,ET1B,True,True,False,bottom,1.5,purple,purple,o,,14.410129540967413
-24,8,ET1B-ET2B,True,True,True,bottom,1.5,purple,purple,o,,27.535747012463307
-24,10,ET2B,True,True,False,top,-1.5,purple,purple,o,,2.0243458411829796
-24,11,ET2B // H$_2$O,False,True,True,top,-1.5,purple,purple,x,,10.279234370021397
-24,12,ET2B + H$_2$O,True,True,False,top,-1.5,purple,purple,o,,6.812871295260402
-24,13,ET2B-ET3B,True,True,True,bottom,1.5,purple,purple,o,,14.382519120387025
-24,14,ET3B + BpinOH,True,True,False,top,-1.5,purple,purple,o,,5.823916228267443
-24,15,ET3B // BpinOH,False,True,True,top,-1.5,purple,purple,x,,9.290279303028438
+24,4,ECRXT-ET1B,True,True,True,bottom,1.5,purple,purple,o,,
+24,6,ET1B,True,True,False,bottom,1.5,purple,purple,o,,
+24,8,ET1B-ET2B,True,True,True,bottom,1.5,purple,purple,o,,
+24,10,ET2B,True,True,False,top,-1.5,purple,purple,o,,
+24,11,ET2B // H$_2$O,False,True,True,top,-1.5,purple,purple,x,,
+24,12,ET2B + H$_2$O,True,True,False,top,-1.5,purple,purple,o,,
+24,13,ET2B-ET3B,True,True,True,bottom,1.5,purple,purple,o,,
+24,14,ET3B + BpinOH,True,True,False,top,-1.5,purple,purple,o,,
+24,15,ET3B // BpinOH,False,True,True,top,-1.5,purple,purple,x,,
 24,16,ET3,True,True,False,top,-1.5,purple,purple,o,,-0.8170174474961546
