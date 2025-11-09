@@ -6,9 +6,9 @@ OFile = 'microkinetics/ob-3y-me4tbuxphos/ob-3y-me4tbuxphos-results.csv'
 
 # Parameters
 species = 34
-trep = 10000.0 # s
-dt = 1000.0 # maximum timestep for solving the system
-tfin = 10000000.0 # Final Time
+trep = 1000.0 # s
+dt = 100.0 # maximum timestep for solving the system
+tfin = 2000000.0 # Final Time
 xini = np.zeros(species)
 xini[29] = 0.02
 xini[28] = 0.001
